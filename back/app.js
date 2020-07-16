@@ -5,10 +5,9 @@ app.use(express.json());
 
 const config = require("./utils/config");
 
-const cors = require('cors')
+const cors = require("cors");
 
-app.use(cors())
-
+app.use(cors());
 
 // const mtgRouter = require('./controllers/gameControllers')
 
@@ -20,26 +19,21 @@ const { uuid } = require("uuidv4");
 //     res.writeHead(200, { 'Content-Type': 'text/plain' })
 //     res.end('Hello World')
 //   })
-//
+
+//Temp cards:
 
 let mtgCards = [
   {
     id: 1,
     content: "black lotus",
-    date: "2020-01-10T17:30:31.098Z",
-    important: true,
   },
   {
     id: 2,
     content: "serra",
-    date: "2020-01-10T18:39:34.091Z",
-    important: false,
   },
   {
     id: 3,
     content: "teferi forever",
-    date: "2020-01-10T19:20:14.298Z",
-    important: true,
   },
 ];
 
@@ -63,7 +57,7 @@ app.post("/api/mtg", (req, res) => {
     });
   }
 
-  console.log('')
+  console.log("");
 
   const playerAmount = [
     {
@@ -76,83 +70,36 @@ app.post("/api/mtg", (req, res) => {
 
 
 
+  //For loop - turn total amount of players into
+  //number sequence with unique ID's
 
+  let allPlayers = [];
 
-  //
+  if (playerAmount[0].players) {
+    playerAmount[0].players += 1;
 
-    //For loop - turn total amount of players into
-    //number sequence with unique ID's
+    for (let i = 1; i < playerAmount[0].players; i++) {
+      let obj = {};
 
-    let allPlayers = []
+      obj["PlayerNum:"] = i;
 
-    if(playerAmount[0].players){
+      obj["id"] = uuid();
 
-        playerAmount[0].players += 1
+      allPlayers.push(obj);
 
-    
-
-    for (let i = 1; i < playerAmount[0].players; i++ ){
-        let obj = {}
-
-        obj['PlayerNum:'] = i
-
-        obj['id'] = uuid()
-        
-        
-        allPlayers.push(obj)
-
-
-        console.log('AllPlayersInForLoop:', allPlayers)
+      console.log("AllPlayersInForLoop:", allPlayers);
     }
-    
-      //
-      console.log('AllPlayers after for loop:', allPlayers)
 
-    
-}
+    //
+    console.log("AllPlayers after for loop:", allPlayers);
+  }
 
+  addedCard = mtgCards.concat(playerAmount);
 
-addedCard = mtgCards.concat(playerAmount);
+  res.json(addedCard);
 
-res.json(addedCard);
-
-// const arr = ['a','b','c'];
-// const asdasd = arr.reduce((array,key)=> (array[key]=uuid(),array),{});
-// console.log('Jonomme:', asdasd)
-// console.log('Jonomme2:', asdasd[0])
-
-
-  //New mapping:
-
-    // function setIDs (item, index) {
-    //     let playerID = uuid() + item;
-    //     return playerID
-    // }
-
-    // const mapPlayers = allPlayers.map(setIDs)
-
-    // console.log('MAPPII', mapPlayers)
-
-    // const setIDs = (item, index) => {let PlayerID = uuid + item  };
-
-
-
-    //Total amount of players... delete?:
-
-//   let mappaus = playerAmount.map((param) => {
-//     console.log("param.players", param.players);
-//     return param.players;
-//   });
-
-//   console.log("mappaus", mappaus);
-
-  //
-
-
-  //
  
 });
-
 
 // const newParticipant = req.body
 //     console.log('newParticipant', newParticipant)
