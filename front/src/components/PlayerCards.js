@@ -8,7 +8,7 @@ import React from 'react'
 
 
 
-export const PlayerCards = ({handleClick}) => {
+export const PlayerCards = ({handleClick, handleNumberChange}) => {
 
    
 
@@ -17,12 +17,12 @@ export const PlayerCards = ({handleClick}) => {
             <h2 className='topicToSetPlayers'>Magic the gathering</h2>
             <div>
                <h3 style={{color: 'lightblue'}}>How many players you want to draft with?</h3>
-                <button className='buttonToSetPlayers' value={2} onClick={handleClick}>2 players </button>
-                <button className='buttonToSetPlayers' value={3} onClick={handleClick}>3 players </button>
-                <button className='buttonToSetPlayers' value={4} onClick={handleClick}>4 players </button>
-                <button className='buttonToSetPlayers' value={5} onClick={handleClick}>5 players </button>
-                <button className='buttonToSetPlayers' value={6} onClick={handleClick}>6 players </button>
-            
+               <form onSubmit={handleClick}> <button className='buttonToSetPlayers' value={2} onClick={handleNumberChange}>2 players </button>
+                <button className='buttonToSetPlayers' value={3} onClick={handleNumberChange}>3 players </button>
+                <button className='buttonToSetPlayers' value={4} onClick={handleNumberChange}>4 players </button>
+                <button className='buttonToSetPlayers' value={5} onClick={handleNumberChange}>5 players </button>
+                <button className='buttonToSetPlayers' value={6} onClick={handleNumberChange}>6 players </button>
+                </form>
             </div>
 
 

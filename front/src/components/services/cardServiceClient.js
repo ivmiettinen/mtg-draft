@@ -1,4 +1,10 @@
 import axios from 'axios'
 
-const baseUrl = 'http://localhost:3001/api/mtg/';
+const baseUrl = 'http://localhost:3003/api/mtg/';
 
+const create = (newObject) => {
+    const request = axios.post(baseUrl, newObject)
+    return request.then(response => response.data)
+}
+
+export default {create }

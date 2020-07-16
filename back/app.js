@@ -5,6 +5,11 @@ app.use(express.json());
 
 const config = require("./utils/config");
 
+const cors = require('cors')
+
+app.use(cors())
+
+
 // const mtgRouter = require('./controllers/gameControllers')
 
 const http = require("http");
@@ -57,6 +62,8 @@ app.post("/api/mtg", (req, res) => {
       error: "content missing",
     });
   }
+
+  console.log('')
 
   const playerAmount = [
     {
