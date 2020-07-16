@@ -1,0 +1,31 @@
+{
+  "name": "ilkka",
+  "version": "1.0.0",
+  "description": "mtg draft",
+  "main": "app.js",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.24",
+    "uuid": "^8.2.0",
+    "uuidv4": "^6.1.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  },
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ivmiettinen.com/mtg-draft.git"
+  },
+  "author": "ilkka",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ivmiettinen.com/mtg-draft/issues"
+  },
+  "homepage": "https://github.com/ivmiettinen.com/mtg-draft#readme"
+}
