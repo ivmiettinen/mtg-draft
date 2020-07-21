@@ -1,11 +1,80 @@
-// // const mtgRouter = require('express').Router()
+const mtgRouter = require('express').Router();
 
-// const express = require('express');
-// const app = express();
+const { uuid } = require('uuidv4');
 
-// app.get('/', (req, res, next) => {
-//     res.json(['black lotus', 'serra', 'teferi forever'])
-// });
+//Temp cards:
+
+let mtgCards = [
+  {
+    id: 1,
+    content: 'black lotus',
+  },
+  {
+    id: 2,
+    content: 'serra',
+  },
+  {
+    id: 3,
+    content: 'teferi forever',
+  },
+];
+
+//
 
 
-// // module.exports = notesRouter
+
+mtgRouter.get('/', (req, res, next) => {
+  res.send(mtgCards);
+});
+
+mtgRouter.post('/', (req, res) => {
+  const newParticipant = req.body;
+  console.log('newParticipant', newParticipant);
+
+  if (!newParticipant.content) {
+    return res.status(400).json({
+      error: 'content missing',
+    });
+  }
+
+  console.log('');
+
+  const playerAmount = [
+    {
+      players: newParticipant.content,
+      id: uuid(),
+    },
+  ];
+
+  console.log('playerAmount', typeof playerAmount[0].players);
+
+  //For loop - turn total amount of players into
+  //number sequence with unique ID's
+
+  let allPlayers = [];
+
+  if (playerAmount[0].players) {
+    playerAmount[0].players += 1;
+
+    for (let i = 1; i < playerAmount[0].players; i++) {
+      let obj = {};
+
+      obj['PlayerNum:'] = i;
+
+      obj['id'] = uuid();
+
+      allPlayers.push(obj);
+
+      console.log('AllPlayersInForLoop:', allPlayers);
+    }
+
+    //
+    console.log('AllPlayers after for loop:', allPlayers);
+  }
+
+  addedCard = mtgCards.concat(playerAmount);
+
+  res.json(addedCard);
+});
+
+module.exports = mtgRouter;
