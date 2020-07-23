@@ -27,8 +27,15 @@ mtgRouter.get('/', (req, res, next) => {
   res.send(mtgCards);
 });
 
+
+const linkToInvite = 'www.ilkka.com'
+
+
 mtgRouter.post('/', (req, res) => {
   const newParticipant = req.body;
+  // if(newParticipant === undefined){
+  //   return res.status(400).json({error: 'content missing!!'})
+  // }
   console.log('newParticipant', newParticipant);
 
   if (!newParticipant.content) {
@@ -74,7 +81,9 @@ mtgRouter.post('/', (req, res) => {
 
   addedCard = mtgCards.concat(playerAmount);
 
-  res.json(addedCard);
+  // res.json({'Here are all the cards at the server:': addedCard});
+
+  res.send( linkToInvite)
 });
 
 module.exports = mtgRouter;

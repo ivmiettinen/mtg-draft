@@ -43,20 +43,29 @@
 }
 
 
-.PlayersCards-SetPlayers {
+.playersCards-setPlayers {
   margin: 100px;
   font-weight: bold;
   color: #CC99FF
 }
 
-.PlayersCards-PlayersAmount{
+.playersCards-playersAmount{
 color: lightblue
 }
 
-.WaitingForGame-participate{
+.confirmGame-participate{
   color: lightsalmon
 }
 
-.WaitingForGame-playerName{
+.confirmGame-playerName{
   color: lightgreen
+}
+
+.waitingGame-player{
+  color: lightcoral;
+  font-weight: bold;
+}
+
+.waitingGame-title{
+color: #CC99FF
 }

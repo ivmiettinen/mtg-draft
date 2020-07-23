@@ -1,13 +1,16 @@
 import React, { useState, useEffect } from 'react';
 import PlayerCards from './PlayerCards';
 import cardServiceClient from './services/cardServiceClient';
-import WaitingForGame from './WaitingForGame';
+import ConfirmGame from './ConfirmGame';
+import WaitingGame from './WaitingGame';
 
 export const FileGatheringBox = () => {
   const [playerAmount, setPlayerAmount] = useState('');
-  const [numberToServer, setnumberToServer] = useState([]);
+  // const [numberToServer, setnumberToServer] = useState([]);
   const [showPlayerPage, setshowPlayerPage] = useState(false);
-  const [newPlayer, addNewPlayer] = useState([])
+  const [newPlayer, addNewPlayer] = useState([]);
+  const [waitingGame, setWaitingGame] = useState(false);
+  const [linkForPlayers, setLinkForPlayers] = useState()
 
   // useEffect(() => {
   //     cardServiceClient.create().then(response => {
@@ -21,9 +24,9 @@ export const FileGatheringBox = () => {
   };
 
   const handlePlayerNameChange = (e) => {
-   console.log('value:', e.target.value)
-   addNewPlayer(e.target.value)
-  }
+    console.log('value:', e.target.value);
+    addNewPlayer(e.target.value);
+  };
 
   const handlePlayerAmount = (e) => {
     e.preventDefault();
@@ -34,7 +37,7 @@ export const FileGatheringBox = () => {
 
     console.log('personObject', playerAmount);
 
-    cardServiceClient.create(playerObject).catch((error) => {
+    cardServiceClient.create(playerObject).then((response) => setLinkForPlayers(response)).catch((error) => {
       console.log('There was on error on posting:', error);
     });
 
@@ -43,30 +46,27 @@ export const FileGatheringBox = () => {
 
 
   const handleGameParticipation = (e) => {
-
-
-
     e.preventDefault();
 
     // console.log('handleGameParticipation', e)
 
- 
-
     const confirmObject = {
       content: newPlayer,
-      id: 1
-    }
+      time: new Date(),
+    };
 
     cardServiceClient.create(confirmObject).catch((error) => {
-      console.log('there was an error confirming your participation', error)
-    })
+      console.log('there was an error confirming your participation', error);
+    });
 
-    addNewPlayer('')
-
-  }
+    setWaitingGame(true);
+    // addNewPlayer('')
+  };
 
 
   console.log('showPlayerPage', showPlayerPage);
+
+  
 
   if (showPlayerPage === false) {
     return (
@@ -77,14 +77,26 @@ export const FileGatheringBox = () => {
         />
       </div>
     );
-  } else if (showPlayerPage === true) {
+  }
+  
+  if (showPlayerPage === true && waitingGame === false) {
     return (
       <div>
-        <WaitingForGame gameParticipation={handleGameParticipation} playerAmount={playerAmount} newPlayer={newPlayer} handlePlayerNameChange={handlePlayerNameChange}/>
+    
+        <ConfirmGame
+          gameParticipation={handleGameParticipation}
+          playerAmount={playerAmount}
+          newPlayer={newPlayer}
+          handlePlayerNameChange={handlePlayerNameChange}
+        />
       </div>
     );
-  } else {
-    return <div>Something went wrong</div>;
+  } else if (showPlayerPage === true && waitingGame === true) {
+    return (
+      <div>
+        <WaitingGame playerAmount={playerAmount} newPlayer={newPlayer} />
+      </div>
+    );
   }
 };
 
