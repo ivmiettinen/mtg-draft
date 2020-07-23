@@ -5,9 +5,9 @@ import React from "react";
 export const PlayerCards = ({ handleClick, handleNumberChange }) => {
   return (
     <div>
-      <h2 className="topicToSetPlayers">Magic the gathering</h2>
+      <h2 className='PlayersCards-SetPlayers'>Magic the gathering</h2>
       <div>
-        <h3 style={{ color: "lightblue" }}>
+        <h3 className='PlayersCards-PlayersAmount' >
           How many players you want to draft with?
         </h3>
         <form onSubmit={handleClick}>
