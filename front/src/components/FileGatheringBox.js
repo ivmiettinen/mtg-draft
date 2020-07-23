@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import PlayerCards from './PlayerCards';
-import cardServiceClient from './services/cardServiceClient';
+import cardServiceClient from '../services/cardServiceClient';
 import ConfirmGame from './ConfirmGame';
 import WaitingGame from './WaitingGame';
 
