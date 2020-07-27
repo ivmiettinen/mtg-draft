@@ -28,7 +28,49 @@ mtgRouter.get('/', (req, res, next) => {
 });
 
 
-const linkToInvite = 'www.ilkka.com'
+
+//Variable for storing player amount:
+
+const playerAmountVar = [];
+
+//Route for storing player amount
+
+mtgRouter.post('/playerAmount', (req, res) => {
+  const playerAmount = req.body;
+
+  if(!playerAmount.content) {
+    return res.status(400).json({
+      error: 'content missing'
+    })
+  }
+
+  if(playerAmountVar.length >= 1){
+    console.log('ERROR: players amount already declared')
+
+    return res.status(400).json({
+      error: 'players amount already declared'
+    })
+  }
+
+ console.log('TYPEE', typeof playerAmount)
+
+ playerAmountVar.push(playerAmount)
+
+
+
+ //Max number from object array:
+ console.log('Max number', Math.max.apply(Math, playerAmountVar.map((param) => {
+  return param.content
+})))
+
+res.send(linkToInvite)
+ 
+})
+
+//Loop for giving all the participating players
+//random uuid:
+
+const linkToInvite = 'www.ilkka.com/LinkToMtgParticipate'
 
 
 mtgRouter.post('/', (req, res) => {
@@ -44,7 +86,7 @@ mtgRouter.post('/', (req, res) => {
     });
   }
 
-  console.log('');
+
 
   const playerAmount = [
     {

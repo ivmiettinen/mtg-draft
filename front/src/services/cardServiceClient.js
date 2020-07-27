@@ -1,7 +1,7 @@
 import axios from "axios";
 
 
-const baseUrl = "http://localhost:3003/api/mtg/";
+const baseUrl = "http://localhost:3003/api/mtg/playerAmount";
 
 const create = (newObject) => {
  
