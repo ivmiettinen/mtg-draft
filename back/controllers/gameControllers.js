@@ -44,13 +44,13 @@ mtgRouter.post("/playerAmount", (req, res) => {
 
   // You can post only once the player amount:
 
-  if (playerAmountNumber.length >= 1) {
-    console.log("ERROR: players amount already declared");
+  // if (playerAmountNumber.length >= 1) {
+  //   console.log("ERROR: players amount already declared");
 
-    return res.status(400).json({
-      error: "players amount already declared",
-    });
-  }
+  //   return res.status(400).json({
+  //     error: "players amount already declared",
+  //   });
+  // }
 
   // console.log("TYPEE", typeof playerAmount);
 

@@ -13,6 +13,7 @@ export const FileGatheringBox = () => {
   const [newPlayer, addNewPlayer] = useState([]);
   const [confirmGame, setConfirmGame] = useState(false);
   const [linkForPlayers, setLinkForPlayers] = useState();
+  const [waitingLounge, setwaitingLounge] = useState(false)
 
   // useEffect(() => {
   //     cardServiceClient.create().then(response => {
@@ -55,6 +56,7 @@ export const FileGatheringBox = () => {
         .createNumber(numberObject)
         .then((response) => setLinkForPlayers(response));
     } catch (error) {
+      // setErrorMessage(`Player amount has already been posted to server`)
       console.log("There was on error on posting:", error);
     }
 
@@ -91,6 +93,9 @@ export const FileGatheringBox = () => {
       console.log("there was an error confirming your participation", error);
     });
 
+
+    setwaitingLounge(true);
+    
     // setConfirmGame(true);
     // addNewPlayer('')
   };
@@ -142,7 +147,7 @@ export const FileGatheringBox = () => {
         
       </div>
     );
-  } if (showPlayerPage === true && confirmGame === true) {
+  } if (showPlayerPage === true && confirmGame === true && waitingLounge === false) {
     return (
       <div>
         <ConfirmGame
@@ -153,10 +158,10 @@ export const FileGatheringBox = () => {
         />
       </div>
     );
-  } if(showPlayerPage === true && confirmGame === true && linkForPlayers !== '' ) {
+  } if(showPlayerPage === true && confirmGame === true && waitingLounge === true ) {
     return (
       <div>
-        
+        <WaitingGame playerAmount={playerAmount} newPlayer={newPlayer} />
       </div>
     );
   }
