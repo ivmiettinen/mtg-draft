@@ -69,3 +69,12 @@ color: lightblue
 .waitingGame-title{
 color: #CC99FF
 }
+
+.urlPageForHost-paragraph1{
+  color: #CC99FF
+}
+
+.urlPageForHost-paragraph2{
+  color: lightcoral;
+  font-weight: bold;
+}

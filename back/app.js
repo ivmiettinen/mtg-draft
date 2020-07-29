@@ -3,6 +3,9 @@ const app = express();
 
 app.use(express.json());
 
+// serve files from the public directory
+
+
 const cors = require("cors");
 
 app.use(cors());

@@ -1,131 +1,129 @@
-const mtgRouter = require('express').Router();
+const mtgRouter = require("express").Router();
 
-const { uuid } = require('uuidv4');
+const { uuid } = require("uuidv4");
 
 //Temp cards:
 
 let mtgCards = [
   {
     id: 1,
-    content: 'black lotus',
+    content: "black lotus",
   },
   {
     id: 2,
-    content: 'serra',
+    content: "serra",
   },
   {
     id: 3,
-    content: 'teferi forever',
+    content: "teferi forever",
   },
 ];
 
 //
 
-
-
-mtgRouter.get('/', (req, res, next) => {
+mtgRouter.get("/", (req, res, next) => {
   res.send(mtgCards);
 });
 
+//Variable for storing player amount number:
 
-
-//Variable for storing player amount:
-
-const playerAmountVar = [];
+const playerAmountNumber = [];
 
 //Route for storing player amount
 
-mtgRouter.post('/playerAmount', (req, res) => {
+mtgRouter.post("/playerAmount", (req, res) => {
   const playerAmount = req.body;
 
-  if(!playerAmount.content) {
+  console.log("miltä näyttää:", playerAmount);
+
+  if (!playerAmount.content) {
     return res.status(400).json({
-      error: 'content missing'
-    })
-  }
-
-  if(playerAmountVar.length >= 1){
-    console.log('ERROR: players amount already declared')
-
-    return res.status(400).json({
-      error: 'players amount already declared'
-    })
-  }
-
- console.log('TYPEE', typeof playerAmount)
-
- playerAmountVar.push(playerAmount)
-
-
-
- //Max number from object array:
- console.log('Max number', Math.max.apply(Math, playerAmountVar.map((param) => {
-  return param.content
-})))
-
-res.send(linkToInvite)
- 
-})
-
-//Loop for giving all the participating players
-//random uuid:
-
-const linkToInvite = 'www.ilkka.com/LinkToMtgParticipate'
-
-
-mtgRouter.post('/', (req, res) => {
-  const newParticipant = req.body;
-  // if(newParticipant === undefined){
-  //   return res.status(400).json({error: 'content missing!!'})
-  // }
-  console.log('newParticipant', newParticipant);
-
-  if (!newParticipant.content) {
-    return res.status(400).json({
-      error: 'content missing',
+      error: "content missing",
     });
   }
 
+  // You can post only once the player amount:
 
+  if (playerAmountNumber.length >= 1) {
+    console.log("ERROR: players amount already declared");
 
-  const playerAmount = [
-    {
-      players: newParticipant.content,
-      id: uuid(),
-    },
-  ];
-
-  console.log('playerAmount', typeof playerAmount[0].players);
-
-  //For loop - turn total amount of players into
-  //number sequence with unique ID's
-
-  let allPlayers = [];
-
-  if (playerAmount[0].players) {
-    playerAmount[0].players += 1;
-
-    for (let i = 1; i < playerAmount[0].players; i++) {
-      let obj = {};
-
-      obj['PlayerNum:'] = i;
-
-      obj['id'] = uuid();
-
-      allPlayers.push(obj);
-
-      console.log('AllPlayersInForLoop:', allPlayers);
-    }
-
-    //
-    console.log('AllPlayers after for loop:', allPlayers);
+    return res.status(400).json({
+      error: "players amount already declared",
+    });
   }
 
-  addedCard = mtgCards.concat(playerAmount);
+  // console.log("TYPEE", typeof playerAmount);
 
-  // res.json({'Here are all the cards at the server:': addedCard});
+  playerAmountNumber.push(playerAmount);
 
-  res.send( linkToInvite)
+  console.log("playerAmountNumber:", playerAmountNumber);
+
+  //Max number from object array:
+  console.log(
+    "Max number",
+    Math.max.apply(
+      Math,
+      playerAmountNumber.map((param) => {
+        return param.content;
+      })
+    )
+  );
+
+  res.send(linkToInvite);
+});
+
+const linkToInvite = "www.ilkka.com/LinkToMtgParticipate";
+
+//Variable for storing all the registered players
+
+const allPlayerStorage = [];
+
+mtgRouter.post("/playerRegister", (req, res) => {
+  const newParticipant = req.body;
+
+  const mapAllPlayers = playerAmountNumber.map((param) => param.content);
+
+  const maxPlayers = Math.max(mapAllPlayers);
+
+  console.log("AllPlayersStorage:", allPlayerStorage);
+
+  console.log("AllPlayersStoragen length", allPlayerStorage.length);
+
+  console.log(
+    "aiemmin pushatut pelaajat eli playerAmountNumber",
+    playerAmountNumber
+  );
+
+  if (allPlayerStorage.length === maxPlayers) {
+    console.log("All the player seats are taken");
+
+    res.send("All the player seats are taken");
+
+    return;
+  }
+
+  if (!newParticipant.content) {
+    return res.status(400).json({
+      error: "content missing",
+    });
+  }
+
+  // console.log('Max number', Math.max.apply(Math, playerAmountNumber.map((param) => {
+  //   return param.content
+  // })))
+  else {
+    const playerAmount = 
+      {
+        player: newParticipant.content,
+        id: uuid(),
+      }
+    
+
+    allPlayerStorage.push(playerAmount);
+
+    // console.log("allPlayerStorage:", allPlayerStorage);
+  }
+  res.send(linkToInvite);
 });
 
 module.exports = mtgRouter;

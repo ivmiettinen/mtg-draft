@@ -2,7 +2,18 @@ import React from "react";
 
 // import {Card, Button} from 'react-bootstrap'
 
-export const PlayerCards = ({ handleClick, handleNumberChange }) => {
+export const PlayerCards = ({ handleClick, handleNumberChange, linkForPlayers }) => {
+  
+// console.log('linkForPlayers', linkForPlayers)
+
+//   if(!linkForPlayers === ''){
+//     return ( <div>
+
+// {linkForPlayers}
+
+//     </div>)
+//   }
+  
   return (
     <div>
       <h2 className='playersCards-setPlayers'>Magic the gathering</h2>

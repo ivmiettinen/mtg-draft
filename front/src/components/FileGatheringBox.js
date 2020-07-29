@@ -3,13 +3,15 @@ import PlayerCards from "./PlayerCards";
 import cardServiceClient from "../services/cardServiceClient";
 import ConfirmGame from "./ConfirmGame";
 import WaitingGame from "./WaitingGame";
+import UrlPageForHost from "./UrlPageForHost";
+import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 
 export const FileGatheringBox = () => {
   const [playerAmount, setPlayerAmount] = useState();
   // const [numberToServer, setnumberToServer] = useState([]);
   const [showPlayerPage, setshowPlayerPage] = useState(false);
   const [newPlayer, addNewPlayer] = useState([]);
-  const [waitingGame, setWaitingGame] = useState(false);
+  const [confirmGame, setConfirmGame] = useState(false);
   const [linkForPlayers, setLinkForPlayers] = useState();
 
   // useEffect(() => {
@@ -17,6 +19,15 @@ export const FileGatheringBox = () => {
   //         setNotes(response.data)
   //     })
   // }, [])
+
+  // console.log("LINKKI", linkForPlayers);
+
+  const handleRegistration = (e) => {
+    console.log('registeration', e.target.value)
+    setConfirmGame(!false)
+  }
+
+
 
   const handleNumberChange = (e) => {
     // console.log('number clicked:', e.target.value);
@@ -28,10 +39,12 @@ export const FileGatheringBox = () => {
     addNewPlayer(e.target.value);
   };
 
+ 
+
   const handlePlayerAmount = async (e) => {
     e.preventDefault();
 
-    const playerObject = {
+    const numberObject = {
       content: Number(playerAmount),
     };
 
@@ -39,7 +52,7 @@ export const FileGatheringBox = () => {
 
     try {
       cardServiceClient
-        .create(playerObject)
+        .createNumber(numberObject)
         .then((response) => setLinkForPlayers(response));
     } catch (error) {
       console.log("There was on error on posting:", error);
@@ -67,22 +80,24 @@ export const FileGatheringBox = () => {
   const handleGameParticipation = (e) => {
     e.preventDefault();
 
-    // console.log('handleGameParticipation', e)
+    console.log('handleGameParticipation', e)
 
     const confirmObject = {
       content: newPlayer,
       time: new Date(),
     };
 
-    cardServiceClient.create(confirmObject).catch((error) => {
+    cardServiceClient.createPlayer(confirmObject).catch((error) => {
       console.log("there was an error confirming your participation", error);
     });
 
-    setWaitingGame(true);
+    // setConfirmGame(true);
     // addNewPlayer('')
   };
 
   console.log("showPlayerPage", showPlayerPage);
+
+  
 
   if (showPlayerPage === false) {
     return (
@@ -90,12 +105,44 @@ export const FileGatheringBox = () => {
         <PlayerCards
           handleClick={handlePlayerAmount}
           handleNumberChange={handleNumberChange}
+          linkForPlayers={linkForPlayers}
         />
       </div>
     );
   }
 
-  if (showPlayerPage === true && waitingGame === false) {
+  if (showPlayerPage === true && confirmGame === false) {
+    return (
+      <div>
+        <UrlPageForHost linkForPlayers={linkForPlayers} handleRegistration={handleRegistration} />
+
+        {/* <Router>
+        <li>
+        <li>
+            <Link to="/ConfirmGame">ConfirmGame</Link>
+          </li>
+        </li>
+        <Switch>
+          <Route exact path="/ConfirmGame">
+            <ConfirmGame
+              gameParticipation={handleGameParticipation}
+              playerAmount={playerAmount}
+              newPlayer={newPlayer}
+              handlePlayerNameChange={handlePlayerNameChange}
+            />
+          </Route>
+        </Switch>
+        </Router> */}
+
+
+        
+{/* <WaitingGame playerAmount={playerAmount} newPlayer={newPlayer} />
+
+        */}
+        
+      </div>
+    );
+  } if (showPlayerPage === true && confirmGame === true) {
     return (
       <div>
         <ConfirmGame
@@ -106,13 +153,18 @@ export const FileGatheringBox = () => {
         />
       </div>
     );
-  } else if (showPlayerPage === true && waitingGame === true) {
+  } if(showPlayerPage === true && confirmGame === true && linkForPlayers !== '' ) {
     return (
       <div>
-        <WaitingGame playerAmount={playerAmount} newPlayer={newPlayer} />
+        
       </div>
     );
   }
+  return(
+    <div>
+      
+    </div>
+  )
 };
 
 export default FileGatheringBox;
