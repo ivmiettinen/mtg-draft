@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
-import PlayerCards from "./PlayerCards";
-import cardServiceClient from "../services/cardServiceClient";
-import ConfirmGame from "./ConfirmGame";
-import WaitingGame from "./WaitingGame";
-import UrlPageForHost from "./UrlPageForHost";
-import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
+import React, { useState, useEffect } from 'react';
+import PlayerCards from './PlayerCards';
+import cardServiceClient from '../services/cardServiceClient';
+import ConfirmGame from './ConfirmGame';
+import WaitingGame from './WaitingGame';
+import UrlPageForHost from './UrlPageForHost';
+import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 
 export const FileGatheringBox = () => {
   const [playerAmount, setPlayerAmount] = useState();
@@ -13,7 +13,30 @@ export const FileGatheringBox = () => {
   const [newPlayer, addNewPlayer] = useState([]);
   const [confirmGame, setConfirmGame] = useState(false);
   const [linkForPlayers, setLinkForPlayers] = useState();
-  const [waitingLounge, setwaitingLounge] = useState(false)
+  const [waitingLounge, setwaitingLounge] = useState(false);
+  const [waitingNumber, setWaitingNumber] = useState(0);
+  const [readyPlayers, setReadyPlayers] = useState([1, 2]);
+
+  console.log('readyPlayers', readyPlayers.length);
+
+  console.log('readyPlayers', readyPlayers);
+
+  //
+
+  //
+
+  useEffect(() => {
+    const fetchData = async () => {
+      try {
+        const result = await cardServiceClient.getPlayers();
+
+        setReadyPlayers(result);
+      } catch (error) {
+        console.log('error on get request', error);
+      }
+    };
+    fetchData();
+  }, [waitingNumber]);
 
   // useEffect(() => {
   //     cardServiceClient.create().then(response => {
@@ -23,12 +46,18 @@ export const FileGatheringBox = () => {
 
   // console.log("LINKKI", linkForPlayers);
 
+  //Testi:
+  const handlewaitingNumber = (e) => {
+    console.log('waitingNumberHandle', e);
+    setWaitingNumber((waitingNumber) => waitingNumber + 1);
+  };
+
+  //
+
   const handleRegistration = (e) => {
-    console.log('registeration', e.target.value)
-    setConfirmGame(!false)
-  }
-
-
+    console.log('registeration', e.target.value);
+    setConfirmGame(!false);
+  };
 
   const handleNumberChange = (e) => {
     // console.log('number clicked:', e.target.value);
@@ -36,11 +65,11 @@ export const FileGatheringBox = () => {
   };
 
   const handlePlayerNameChange = (e) => {
-    console.log("value:", e.target.value);
+    console.log('value:', e.target.value);
+    // sessionStorage.setItem('Player name:', e.target.value)
+
     addNewPlayer(e.target.value);
   };
-
- 
 
   const handlePlayerAmount = async (e) => {
     e.preventDefault();
@@ -49,7 +78,7 @@ export const FileGatheringBox = () => {
       content: Number(playerAmount),
     };
 
-    console.log("personObject", playerAmount);
+    console.log('personObject', playerAmount);
 
     try {
       cardServiceClient
@@ -57,7 +86,7 @@ export const FileGatheringBox = () => {
         .then((response) => setLinkForPlayers(response));
     } catch (error) {
       // setErrorMessage(`Player amount has already been posted to server`)
-      console.log("There was on error on posting:", error);
+      console.log('There was on error on posting:', error);
     }
 
     setshowPlayerPage(!false);
@@ -82,27 +111,51 @@ export const FileGatheringBox = () => {
   const handleGameParticipation = (e) => {
     e.preventDefault();
 
-    console.log('handleGameParticipation', e)
+    console.log('handleGameParticipation', e);
 
     const confirmObject = {
       content: newPlayer,
       time: new Date(),
     };
 
-    cardServiceClient.createPlayer(confirmObject).catch((error) => {
-      console.log("there was an error confirming your participation", error);
-    });
+    setWaitingNumber((waitingNumber) => waitingNumber + 1);
 
+    cardServiceClient
+      .createPlayer(confirmObject)
+      .then(setWaitingNumber((waitingNumber) => waitingNumber + 1))
+      .catch((error) => {
+        console.log('there was an error confirming your participation', error);
+      });
+
+    //TEMP:
+
+    // cardServiceClient
+    // .createPlayer(confirmObject)
+    // .then((response) => setReadyPlayers(response))
+    // .catch((error) => {
+    //   console.log('there was an error confirming your participation', error);
+    // });
+
+    //
+
+    // .then((response) => setLinkForPlayers(response));
 
     setwaitingLounge(true);
-    
+
+    setWaitingNumber((waitingNumber) => waitingNumber + 1);
+
+    // cardServiceClient
+    //   .getPlayers(confirmObject)
+    //   .then(setReadyPlayers(confirmObject))
+    //   .catch((error) => {
+    //     console.log('there was an error confirming your participation', error);
+    //   });
+
     // setConfirmGame(true);
     // addNewPlayer('')
   };
 
-  console.log("showPlayerPage", showPlayerPage);
-
-  
+  console.log('showPlayerPage', showPlayerPage);
 
   if (showPlayerPage === false) {
     return (
@@ -119,7 +172,10 @@ export const FileGatheringBox = () => {
   if (showPlayerPage === true && confirmGame === false) {
     return (
       <div>
-        <UrlPageForHost linkForPlayers={linkForPlayers} handleRegistration={handleRegistration} />
+        <UrlPageForHost
+          linkForPlayers={linkForPlayers}
+          handleRegistration={handleRegistration}
+        />
 
         {/* <Router>
         <li>
@@ -139,15 +195,16 @@ export const FileGatheringBox = () => {
         </Switch>
         </Router> */}
 
-
-        
-{/* <WaitingGame playerAmount={playerAmount} newPlayer={newPlayer} />
-
-        */}
-        
+        {/* <WaitingGame playerAmount={playerAmount} newPlayer={newPlayer} />
+         */}
       </div>
     );
-  } if (showPlayerPage === true && confirmGame === true && waitingLounge === false) {
+  }
+  if (
+    showPlayerPage === true &&
+    confirmGame === true &&
+    waitingLounge === false
+  ) {
     return (
       <div>
         <ConfirmGame
@@ -158,18 +215,32 @@ export const FileGatheringBox = () => {
         />
       </div>
     );
-  } if(showPlayerPage === true && confirmGame === true && waitingLounge === true ) {
+  }
+  if (
+    showPlayerPage === true &&
+    confirmGame === true &&
+    waitingLounge === true
+  ) {
+    // if(readyPlayers.length > playerAmount){
+    //   setInterval(() => {
+    //     console.log('Interval triggered');
+    //   }, 1000);
+
+    // }else{
+
     return (
       <div>
-        <WaitingGame playerAmount={playerAmount} newPlayer={newPlayer} />
+        <WaitingGame
+          playerAmount={playerAmount}
+          newPlayer={newPlayer}
+          readyPlayers={readyPlayers}
+          waitingNumber={waitingNumber}
+          handlewaitingNumber={handlewaitingNumber}
+        />
       </div>
     );
   }
-  return(
-    <div>
-      
-    </div>
-  )
+  return <div></div>;
 };
 
 export default FileGatheringBox;

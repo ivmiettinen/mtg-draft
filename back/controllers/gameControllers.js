@@ -1,28 +1,39 @@
-const mtgRouter = require("express").Router();
+const mtgRouter = require('express').Router();
 
-const { uuid } = require("uuidv4");
+const { uuid } = require('uuidv4');
 
 //Temp cards:
 
 let mtgCards = [
   {
     id: 1,
-    content: "black lotus",
+    content: 'black lotus',
   },
   {
     id: 2,
-    content: "serra",
+    content: 'serra',
   },
   {
     id: 3,
-    content: "teferi forever",
+    content: 'teferi forever',
   },
 ];
 
+//Variable for storing all the registered players
+
+const allPlayerStorage = [];
+
 //
 
-mtgRouter.get("/", (req, res, next) => {
-  res.send(mtgCards);
+mtgRouter.get('/', (req, res, next) => {
+
+  console.log('GET:', allPlayerStorage)
+
+  console.log('GET LENGTH:', allPlayerStorage.length)
+
+  
+    res.json(allPlayerStorage.map((player) => player));
+  
 });
 
 //Variable for storing player amount number:
@@ -31,14 +42,14 @@ const playerAmountNumber = [];
 
 //Route for storing player amount
 
-mtgRouter.post("/playerAmount", (req, res) => {
+mtgRouter.post('/playerAmount', (req, res) => {
   const playerAmount = req.body;
 
-  console.log("miltä näyttää:", playerAmount);
+  console.log('miltä näyttää:', playerAmount);
 
   if (!playerAmount.content) {
     return res.status(400).json({
-      error: "content missing",
+      error: 'content missing',
     });
   }
 
@@ -56,11 +67,11 @@ mtgRouter.post("/playerAmount", (req, res) => {
 
   playerAmountNumber.push(playerAmount);
 
-  console.log("playerAmountNumber:", playerAmountNumber);
+  console.log('playerAmountNumber:', playerAmountNumber);
 
   //Max number from object array:
   console.log(
-    "Max number",
+    'Max number',
     Math.max.apply(
       Math,
       playerAmountNumber.map((param) => {
@@ -72,39 +83,52 @@ mtgRouter.post("/playerAmount", (req, res) => {
   res.send(linkToInvite);
 });
 
-const linkToInvite = "www.ilkka.com/LinkToMtgParticipate";
+const linkToInvite = 'www.ilkka.com/LinkToMtgParticipate';
 
-//Variable for storing all the registered players
-
-const allPlayerStorage = [];
-
-mtgRouter.post("/playerRegister", (req, res) => {
+mtgRouter.post('/playerRegister', (req, res) => {
   const newParticipant = req.body;
 
   const mapAllPlayers = playerAmountNumber.map((param) => param.content);
 
   const maxPlayers = Math.max(mapAllPlayers);
 
-  console.log("AllPlayersStorage:", allPlayerStorage);
+  console.log('AllPlayersStorage:', allPlayerStorage);
 
-  console.log("AllPlayersStoragen length", allPlayerStorage.length);
+  console.log('AllPlayersStoragen length', allPlayerStorage.length);
 
   console.log(
-    "aiemmin pushatut pelaajat eli playerAmountNumber",
+    'aiemmin pushatut pelaajat eli playerAmountNumber',
     playerAmountNumber
   );
 
   if (allPlayerStorage.length === maxPlayers) {
-    console.log("All the player seats are taken");
+    console.log('All the player seats are taken');
 
-    res.send("All the player seats are taken");
+    res.send('All the player seats are taken');
 
     return;
   }
 
+  //
+  // const samePlayerName = allPlayerStorage.find()
+
+//   const apuFunktio = newParticipant.content
+
+//   const etsinta = apuFunktio.find((apuFunktio) => {
+//     return param
+//   })
+
+// console.log('findi', etsinta)
+  
+  // if(newParticipant.content === ){
+
+  // }
+
+  //
+
   if (!newParticipant.content) {
     return res.status(400).json({
-      error: "content missing",
+      error: 'content missing',
     });
   }
 
@@ -112,18 +136,20 @@ mtgRouter.post("/playerRegister", (req, res) => {
   //   return param.content
   // })))
   else {
-    const playerAmount = 
-      {
-        player: newParticipant.content,
-        id: uuid(),
-      }
-    
+    const playerAmount = {
+      player: newParticipant.content,
+      id: uuid(),
+    };
 
     allPlayerStorage.push(playerAmount);
 
     // console.log("allPlayerStorage:", allPlayerStorage);
   }
-  res.send(linkToInvite);
+  // console.log('Tähän mennessä pelaajia on', )
+
+  // const numberToSend = allPlayerStorage.length
+
+  res.send('posting was succesful');
 });
 
 module.exports = mtgRouter;
