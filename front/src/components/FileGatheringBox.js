@@ -23,7 +23,6 @@ export const FileGatheringBox = () => {
 
   //
 
-  //
 
   useEffect(() => {
     const fetchData = async () => {
