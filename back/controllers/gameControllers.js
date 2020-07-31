@@ -26,14 +26,11 @@ const allPlayerStorage = [];
 //
 
 mtgRouter.get('/', (req, res, next) => {
+  console.log('GET:', allPlayerStorage);
 
-  console.log('GET:', allPlayerStorage)
+  console.log('GET LENGTH:', allPlayerStorage.length);
 
-  console.log('GET LENGTH:', allPlayerStorage.length)
-
-  
-    res.json(allPlayerStorage.map((player) => player));
-  
+  res.json(allPlayerStorage.map((player) => player));
 });
 
 //Variable for storing player amount number:
@@ -109,17 +106,27 @@ mtgRouter.post('/playerRegister', (req, res) => {
     return;
   }
 
+  let allPlayerNames = allPlayerStorage.map((param) => {
+    return param.player;
+  });
+
+  if (allPlayerNames.includes(newParticipant.content)) {
+    return res.status(409).json({
+      error: 'playername is already in use!',
+    });
+  }
+
   //
   // const samePlayerName = allPlayerStorage.find()
 
-//   const apuFunktio = newParticipant.content
+  //   const apuFunktio = newParticipant.content
 
-//   const etsinta = apuFunktio.find((apuFunktio) => {
-//     return param
-//   })
+  //   const etsinta = apuFunktio.find((apuFunktio) => {
+  //     return param
+  //   })
 
-// console.log('findi', etsinta)
-  
+  // console.log('findi', etsinta)
+
   // if(newParticipant.content === ){
 
   // }

@@ -15,14 +15,14 @@ export const FileGatheringBox = () => {
   const [linkForPlayers, setLinkForPlayers] = useState();
   const [waitingLounge, setwaitingLounge] = useState(false);
   const [waitingNumber, setWaitingNumber] = useState(0);
-  const [readyPlayers, setReadyPlayers] = useState([1, 2]);
+  const [readyPlayers, setReadyPlayers] = useState([]);
+
 
   console.log('readyPlayers', readyPlayers.length);
 
   console.log('readyPlayers', readyPlayers);
 
   //
-
 
   useEffect(() => {
     const fetchData = async () => {
@@ -119,11 +119,28 @@ export const FileGatheringBox = () => {
 
     setWaitingNumber((waitingNumber) => waitingNumber + 1);
 
+    let copyOfPlayerNames = [...readyPlayers];
+
+    let mapPlayers = copyOfPlayerNames.map((param) => {
+      return param.player;
+    });
+
+    console.log('param.content', mapPlayers);
+
+    if (mapPlayers.includes(confirmObject.content)) {
+      alert(`${newPlayer} is already in use`);
+      return;
+    }
+
     cardServiceClient
       .createPlayer(confirmObject)
       .then(setWaitingNumber((waitingNumber) => waitingNumber + 1))
       .catch((error) => {
-        console.log('there was an error confirming your participation', error);
+        if (error.message === 'Request failed with status code 409') {
+          alert(error.message + ': Player name is already in use.');
+        } else {
+          alert(error.message);
+        }
       });
 
     //TEMP:
