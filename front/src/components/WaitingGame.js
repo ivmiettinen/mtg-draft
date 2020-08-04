@@ -4,6 +4,8 @@ export const WaitingGame = ({newPlayer, playerAmount, readyPlayers, handlewaitin
     
     
     console.log('Propsit ReadyPlayers', handlewaitingNumber)
+
+    console.log('READYREADY:', readyPlayers)
     
 
 
@@ -13,7 +15,7 @@ export const WaitingGame = ({newPlayer, playerAmount, readyPlayers, handlewaitin
         <h4 className='waitingGame-player'>{newPlayer}</h4>
         
         <p>You are waiting for other players.. then the draft is ready to start!</p>
-        <p>Players ready: {readyPlayers.length } / {playerAmount}</p>
+        <p>Players ready: {readyPlayers.length} / {playerAmount}</p>
         <p>Time:</p>
         {/* <button onClick={handlewaitingNumber}>Klikkaa</button> */}
         <p>{waitingNumber}</p>

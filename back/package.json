@@ -4,11 +4,13 @@
   "description": "mtg draft",
   "main": "app.js",
   "dependencies": {
+    "axios": "^0.19.2",
     "cors": "^2.8.5",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "mongodb": "^2.2.33",
     "mongoose": "^5.9.25",
+    "socket.io": "^2.3.0",
     "uuid": "^8.2.0",
     "uuidv4": "^6.1.1"
   },

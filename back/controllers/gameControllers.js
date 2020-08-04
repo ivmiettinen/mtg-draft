@@ -2,6 +2,9 @@ const mtgRouter = require('express').Router();
 
 const { uuid } = require('uuidv4');
 
+const allPlayerStorage = require('../allPlayerStorageDB');
+// console.log('allPlayerStorage', allPlayerStorage)
+
 //Temp cards:
 
 let mtgCards = [
@@ -17,18 +20,17 @@ let mtgCards = [
     id: 3,
     content: 'teferi forever',
   },
+  { id: 4, content: 'teferi forever' },
 ];
 
 //Variable for storing all the registered players
-
-const allPlayerStorage = [];
 
 //
 
 mtgRouter.get('/', (req, res, next) => {
   console.log('GET:', allPlayerStorage);
 
-  console.log('GET LENGTH:', allPlayerStorage.length);
+  // console.log('GET LENGTH:', allPlayerStorage.length);
 
   res.json(allPlayerStorage.map((player) => player));
 });
@@ -37,12 +39,14 @@ mtgRouter.get('/', (req, res, next) => {
 
 const playerAmountNumber = [];
 
+//
+
 //Route for storing player amount
 
 mtgRouter.post('/playerAmount', (req, res) => {
   const playerAmount = req.body;
 
-  console.log('miltä näyttää:', playerAmount);
+  console.log('playerAmount:', playerAmount);
 
   if (!playerAmount.content) {
     return res.status(400).json({
@@ -89,14 +93,16 @@ mtgRouter.post('/playerRegister', (req, res) => {
 
   const maxPlayers = Math.max(mapAllPlayers);
 
+  console.log('maximi:', maxPlayers);
+
   console.log('AllPlayersStorage:', allPlayerStorage);
 
   console.log('AllPlayersStoragen length', allPlayerStorage.length);
 
-  console.log(
-    'aiemmin pushatut pelaajat eli playerAmountNumber',
-    playerAmountNumber
-  );
+  // console.log(
+  //   'aiemmin pushatut pelaajat eli playerAmountNumber',
+  //   playerAmountNumber
+  // );
 
   if (allPlayerStorage.length === maxPlayers) {
     console.log('All the player seats are taken');
@@ -149,6 +155,8 @@ mtgRouter.post('/playerRegister', (req, res) => {
     };
 
     allPlayerStorage.push(playerAmount);
+    console.log('deallPlayerStoragedeebee', allPlayerStorage);
+    console.log('allPlayerStorage.length', allPlayerStorage.length);
 
     // console.log("allPlayerStorage:", allPlayerStorage);
   }
@@ -159,4 +167,4 @@ mtgRouter.post('/playerRegister', (req, res) => {
   res.send('posting was succesful');
 });
 
-module.exports = mtgRouter;
+(module.exports = mtgRouter), ['foo', 'bar', 3];

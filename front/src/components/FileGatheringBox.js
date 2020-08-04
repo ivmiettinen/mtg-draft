@@ -6,6 +6,7 @@ import WaitingGame from './WaitingGame';
 import UrlPageForHost from './UrlPageForHost';
 import { BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
 import { Redirect, useHistory } from 'react-router-dom';
+import socketIOClient from 'socket.io-client';
 // import Routing from './Routing';
 
 export const FileGatheringBox = () => {
@@ -18,27 +19,54 @@ export const FileGatheringBox = () => {
   const [waitingLounge, setwaitingLounge] = useState(false);
   const [waitingNumber, setWaitingNumber] = useState(0);
   const [readyPlayers, setReadyPlayers] = useState([]);
+  const [response, setResponse] = useState([]);
+  const [endPoint, setEndpoint] = useState('http://localhost:3003/');
 
-  console.log('readyPlayers', readyPlayers.length);
+  // console.log('readyPlayers', readyPlayers.length);
 
-  console.log('readyPlayers', readyPlayers);
+  // console.log('readyPlayers', readyPlayers);
 
   // const routes = Routing();
 
   //
 
   useEffect(() => {
-    const fetchData = async () => {
-      try {
-        const result = await cardServiceClient.getPlayers();
+    const endPoint = 'http://localhost:3003/'
+    const socket = socketIOClient(endPoint);
+    console.log('Socketti1')
+    socket.on('FromAPI', (data) => {
+      // console.log('data:', data)
+      setResponse(data);
+      
+      // const result = cardServiceClient.getPlayers();
 
-        setReadyPlayers(result);
-      } catch (error) {
-        console.log('error on get request', error);
-      }
-    };
-    fetchData();
-  }, [waitingNumber]);
+      setReadyPlayers(data);
+      console.log('Socketti2')
+      console.log('setreadyplayers', data)
+      
+    });
+  }, [readyPlayers] );
+
+
+//////
+// useEffect(() => {
+
+//   const endPoint = 'http://localhost:3003/api/mtg/'
+
+//   const socket = socketIOClient(endPoint);
+
+//   const fetchData = async () => {
+//     try {
+//       const result = await cardServiceClient.getPlayers();
+
+//       setReadyPlayers(result);
+//     } catch (error) {
+//       console.log('error on get request', error);
+//     }
+//   };
+//   fetchData();
+// }, [waitingNumber]);
+
 
   // useEffect(() => {
   //     cardServiceClient.create().then(response => {
@@ -176,34 +204,43 @@ export const FileGatheringBox = () => {
 
   console.log('showPlayerPage', showPlayerPage);
 
-
   if (showPlayerPage === false) {
     return (
       <Router>
-      <div>
-        {/* <Redirect from='/' to='/PlayerCards' /> */}
-        <PlayerCards
-          handleClick={handlePlayerAmount}
-          handleNumberChange={handleNumberChange}
-          linkForPlayers={linkForPlayers}
-        />
-      </div>
+        <div>
+          <Route
+            path='/ConfirmGame'
+            component={() => {
+              // setshowPlayerPage(true) === true && setConfirmGame(true);
+              // setwaitingLounge(false);
+              window.location.href = 'http://localhost:3000/ConfirmGame';
+              return null;
+            }}
+          />
+          {/* <Redirect from='/' to='/PlayerCards' /> */}
+         {readyPlayers.length}
+          <PlayerCards
+            handleClick={handlePlayerAmount}
+            handleNumberChange={handleNumberChange}
+            linkForPlayers={linkForPlayers}
+          />
+        </div>
       </Router>
     );
   }
 
   if (showPlayerPage === true && confirmGame === false) {
     return (
-     <Router>
+      <Router>
         <div>
           <Redirect from='/' to='/UrlPageForHost' />
-        
-              <UrlPageForHost
-                linkForPlayers={linkForPlayers}
-                handleRegistration={handleRegistration}
-              />
 
-              {/* <Router>
+          <UrlPageForHost
+            linkForPlayers={linkForPlayers}
+            handleRegistration={handleRegistration}
+          />
+
+          {/* <Router>
         <li>
         <li>
             <Link to="/ConfirmGame">ConfirmGame</Link>
@@ -221,12 +258,10 @@ export const FileGatheringBox = () => {
         </Switch>
         </Router> */}
 
-              {/* <WaitingGame playerAmount={playerAmount} newPlayer={newPlayer} />
-               */}
-            
+          {/* <WaitingGame playerAmount={playerAmount} newPlayer={newPlayer} />
+           */}
         </div>
-        </Router>
-     
+      </Router>
     );
   }
   if (
@@ -236,17 +271,17 @@ export const FileGatheringBox = () => {
   ) {
     return (
       <Router>
-      <div>
-        <Redirect from='/UrlPageForHost' to='/ConfirmGame' />
-        <Route exact path='/ConfirmGame'>
-        <ConfirmGame
-          gameParticipation={handleGameParticipation}
-          playerAmount={playerAmount}
-          newPlayer={newPlayer}
-          handlePlayerNameChange={handlePlayerNameChange}
-        />
-        </Route>
-      </div>
+        <div>
+          <Redirect from='/UrlPageForHost' to='/ConfirmGame' />
+          <Route exact path='/ConfirmGame'>
+            <ConfirmGame
+              gameParticipation={handleGameParticipation}
+              playerAmount={playerAmount}
+              newPlayer={newPlayer}
+              handlePlayerNameChange={handlePlayerNameChange}
+            />
+          </Route>
+        </div>
       </Router>
     );
   }
@@ -264,16 +299,16 @@ export const FileGatheringBox = () => {
 
     return (
       <Router>
-      <div>
-        <Redirect from='/ConfirmGame' to='/WaitingGame' />
-        <WaitingGame
-          playerAmount={playerAmount}
-          newPlayer={newPlayer}
-          readyPlayers={readyPlayers}
-          waitingNumber={waitingNumber}
-          handlewaitingNumber={handlewaitingNumber}
-        />
-      </div>
+        <div>
+          <Redirect from='/ConfirmGame' to='/WaitingGame' />
+          <WaitingGame
+            playerAmount={playerAmount}
+            newPlayer={newPlayer}
+            readyPlayers={readyPlayers}
+            waitingNumber={waitingNumber}
+            handlewaitingNumber={handlewaitingNumber}
+          />
+        </div>
       </Router>
     );
   }
