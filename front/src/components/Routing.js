@@ -5,20 +5,15 @@
 // import { Redirect, useHistory } from 'react-router-dom';
 
 // const Routing = (props) => {
-//     console.log('propseja', props)
+//   console.log('propseja', props);
 //   return (
 //     <Router>
 //       <Switch>
-//         <Redirect from='/' to='/PlayerCards' />
-//         <Route path='/PlayerCards' exact component={PlayerCards}>
+//         {/* <Redirect from='/' to='/PlayerCards' /> */}
+//         <Route path='/' exact component={PlayerCards}></Route>
+//         <Route path='UrlPageForHost' exact component={UrlPageForHost}>
 //           {/* <Route exact path="/sessionstate2" component={Template2}/>
 //     <Route exact path="/sessionstate3" component={Template3}/> */}
-//         </Route>
-//       </Switch>
-//       <Switch>
-//         {/* <Redirect from='/PlayerCards' to='/UrlPageForHost' /> */}
-//         <Route exact path='/UrlPageForHost' component={UrlPageForHost}>
-//           <UrlPageForHost />
 //         </Route>
 //       </Switch>
 //     </Router>

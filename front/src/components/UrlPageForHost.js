@@ -4,6 +4,9 @@ import React from 'react'
 
 
 export const UrlPageForHost = ({linkForPlayers, handleRegistration}) => {
+
+    console.log('UrlPageForHost', window.location.href)
+    
     return (
         <div>
             <p className='urlPageForHost-paragraph1'>Share link below to other players:</p>

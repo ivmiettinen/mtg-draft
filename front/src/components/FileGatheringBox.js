@@ -26,57 +26,22 @@ export const FileGatheringBox = () => {
 
   // console.log('readyPlayers', readyPlayers);
 
-  // const routes = Routing();
-
-  //
-
   useEffect(() => {
-    const endPoint = 'http://localhost:3003/'
+    const endPoint = 'http://localhost:3003/';
     const socket = socketIOClient(endPoint);
-    console.log('Socketti1')
+    console.log('Socketti1');
     socket.on('FromAPI', (data) => {
       // console.log('data:', data)
       setResponse(data);
-      
+
       // const result = cardServiceClient.getPlayers();
 
       setReadyPlayers(data);
-      console.log('Socketti2')
-      console.log('setreadyplayers', data)
-      
+      console.log('Socketti2');
+      console.log('setreadyplayers', data);
     });
-  }, [readyPlayers] );
+  }, [readyPlayers]);
 
-
-//////
-// useEffect(() => {
-
-//   const endPoint = 'http://localhost:3003/api/mtg/'
-
-//   const socket = socketIOClient(endPoint);
-
-//   const fetchData = async () => {
-//     try {
-//       const result = await cardServiceClient.getPlayers();
-
-//       setReadyPlayers(result);
-//     } catch (error) {
-//       console.log('error on get request', error);
-//     }
-//   };
-//   fetchData();
-// }, [waitingNumber]);
-
-
-  // useEffect(() => {
-  //     cardServiceClient.create().then(response => {
-  //         setNotes(response.data)
-  //     })
-  // }, [])
-
-  // console.log("LINKKI", linkForPlayers);
-
-  //Testi:
   const handlewaitingNumber = (e) => {
     console.log('waitingNumberHandle', e);
     setWaitingNumber((waitingNumber) => waitingNumber + 1);
@@ -122,22 +87,6 @@ export const FileGatheringBox = () => {
     setshowPlayerPage(!false);
   };
 
-  // const handlePlayerAmount = (e) => {
-  //   e.preventDefault();
-
-  //   const playerObject = {
-  //     content: Number(playerAmount),
-  //   };
-
-  //   console.log('personObject', playerAmount);
-
-  //   cardServiceClient.create(playerObject).then((response) => setLinkForPlayers(response)).catch((error) => {
-  //     console.log('There was on error on posting:', error);
-  //   });
-
-  //   setshowPlayerPage(!false)
-  // };
-
   const handleGameParticipation = (e) => {
     e.preventDefault();
 
@@ -174,32 +123,11 @@ export const FileGatheringBox = () => {
         }
       });
 
-    //TEMP:
-
-    // cardServiceClient
-    // .createPlayer(confirmObject)
-    // .then((response) => setReadyPlayers(response))
-    // .catch((error) => {
-    //   console.log('there was an error confirming your participation', error);
-    // });
-
-    //
-
-    // .then((response) => setLinkForPlayers(response));
-
+    setshowPlayerPage(true);
+    setConfirmGame(true);
     setwaitingLounge(true);
 
     setWaitingNumber((waitingNumber) => waitingNumber + 1);
-
-    // cardServiceClient
-    //   .getPlayers(confirmObject)
-    //   .then(setReadyPlayers(confirmObject))
-    //   .catch((error) => {
-    //     console.log('there was an error confirming your participation', error);
-    //   });
-
-    // setConfirmGame(true);
-    // addNewPlayer('')
   };
 
   console.log('showPlayerPage', showPlayerPage);
@@ -208,17 +136,9 @@ export const FileGatheringBox = () => {
     return (
       <Router>
         <div>
-          <Route
-            path='/ConfirmGame'
-            component={() => {
-              // setshowPlayerPage(true) === true && setConfirmGame(true);
-              // setwaitingLounge(false);
-              window.location.href = 'http://localhost:3000/ConfirmGame';
-              return null;
-            }}
-          />
-          {/* <Redirect from='/' to='/PlayerCards' /> */}
-         {readyPlayers.length}
+          <Route path='/ConfirmGame' />
+
+          {readyPlayers.length}
           <PlayerCards
             handleClick={handlePlayerAmount}
             handleNumberChange={handleNumberChange}
@@ -239,27 +159,6 @@ export const FileGatheringBox = () => {
             linkForPlayers={linkForPlayers}
             handleRegistration={handleRegistration}
           />
-
-          {/* <Router>
-        <li>
-        <li>
-            <Link to="/ConfirmGame">ConfirmGame</Link>
-          </li>
-        </li>
-        <Switch>
-          <Route exact path="/ConfirmGame">
-            <ConfirmGame
-              gameParticipation={handleGameParticipation}
-              playerAmount={playerAmount}
-              newPlayer={newPlayer}
-              handlePlayerNameChange={handlePlayerNameChange}
-            />
-          </Route>
-        </Switch>
-        </Router> */}
-
-          {/* <WaitingGame playerAmount={playerAmount} newPlayer={newPlayer} />
-           */}
         </div>
       </Router>
     );
@@ -290,13 +189,6 @@ export const FileGatheringBox = () => {
     confirmGame === true &&
     waitingLounge === true
   ) {
-    // if(readyPlayers.length > playerAmount){
-    //   setInterval(() => {
-    //     console.log('Interval triggered');
-    //   }, 1000);
-
-    // }else{
-
     return (
       <Router>
         <div>
