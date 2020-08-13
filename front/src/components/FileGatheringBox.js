@@ -42,6 +42,7 @@ export const FileGatheringBox = () => {
     });
   }, [readyPlayers]);
 
+  //Test:
   const handlewaitingNumber = (e) => {
     console.log('waitingNumberHandle', e);
     setWaitingNumber((waitingNumber) => waitingNumber + 1);
@@ -60,7 +61,7 @@ export const FileGatheringBox = () => {
   };
 
   const handlePlayerNameChange = (e) => {
-    console.log('value:', e.target.value);
+    // console.log('value:', e.target.value);
     // sessionStorage.setItem('Player name:', e.target.value)
 
     addNewPlayer(e.target.value);
@@ -123,8 +124,6 @@ export const FileGatheringBox = () => {
         }
       });
 
-    setshowPlayerPage(true);
-    setConfirmGame(true);
     setwaitingLounge(true);
 
     setWaitingNumber((waitingNumber) => waitingNumber + 1);
@@ -132,68 +131,48 @@ export const FileGatheringBox = () => {
 
   console.log('showPlayerPage', showPlayerPage);
 
-  if (showPlayerPage === false) {
-    return (
-      <Router>
-        <div>
-          <Route path='/ConfirmGame' />
+  return (
+    <Router>
+      <div>
+        {/* <Redirect from='/' to='/PlayerCards' /> */}
+        {readyPlayers.length}
+        <PlayerCards
+          showPlayerPage={showPlayerPage}
+          handleClick={handlePlayerAmount}
+          handleNumberChange={handleNumberChange}
+          linkForPlayers={linkForPlayers}
+        />
 
-          {readyPlayers.length}
-          <PlayerCards
-            handleClick={handlePlayerAmount}
-            handleNumberChange={handleNumberChange}
-            linkForPlayers={linkForPlayers}
-          />
-        </div>
-      </Router>
-    );
-  }
-
-  if (showPlayerPage === true && confirmGame === false) {
-    return (
-      <Router>
         <div>
           <Redirect from='/' to='/UrlPageForHost' />
 
           <UrlPageForHost
+            showPlayerPage={showPlayerPage}
+            confirmGame={confirmGame}
             linkForPlayers={linkForPlayers}
             handleRegistration={handleRegistration}
           />
         </div>
-      </Router>
-    );
-  }
-  if (
-    showPlayerPage === true &&
-    confirmGame === true &&
-    waitingLounge === false
-  ) {
-    return (
-      <Router>
+
         <div>
           <Redirect from='/UrlPageForHost' to='/ConfirmGame' />
-          <Route exact path='/ConfirmGame'>
-            <ConfirmGame
-              gameParticipation={handleGameParticipation}
-              playerAmount={playerAmount}
-              newPlayer={newPlayer}
-              handlePlayerNameChange={handlePlayerNameChange}
-            />
-          </Route>
+
+          <ConfirmGame
+            showPlayerPage={showPlayerPage}
+            confirmGame={confirmGame}
+            waitingLounge={waitingLounge}
+            gameParticipation={handleGameParticipation}
+            playerAmount={playerAmount}
+            newPlayer={newPlayer}
+            handlePlayerNameChange={handlePlayerNameChange}
+          />
         </div>
-      </Router>
-    );
-  }
-  if (
-    showPlayerPage === true &&
-    confirmGame === true &&
-    waitingLounge === true
-  ) {
-    return (
-      <Router>
         <div>
           <Redirect from='/ConfirmGame' to='/WaitingGame' />
           <WaitingGame
+            showPlayerPage={showPlayerPage}
+            confirmGame={confirmGame}
+            waitingLounge={waitingLounge}
             playerAmount={playerAmount}
             newPlayer={newPlayer}
             readyPlayers={readyPlayers}
@@ -201,10 +180,9 @@ export const FileGatheringBox = () => {
             handlewaitingNumber={handlewaitingNumber}
           />
         </div>
-      </Router>
-    );
-  }
-  return <div></div>;
+      </div>
+    </Router>
+  );
 };
 
 export default FileGatheringBox;

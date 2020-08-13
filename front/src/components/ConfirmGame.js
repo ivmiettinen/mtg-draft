@@ -1,12 +1,21 @@
 import React from 'react';
 
 export const ConfirmGame = ({
+  showPlayerPage,
+  confirmGame,
   gameParticipation,
+  waitingLounge,
   handlePlayerNameChange,
   playerAmount,
   newPlayer,
 }) => {
   // console.log('props', gameParticipation)
+
+  if (
+    showPlayerPage === true &&
+    confirmGame === true &&
+    waitingLounge === false
+  ){
 
   return (
     <div>
@@ -27,7 +36,12 @@ export const ConfirmGame = ({
         <button>Confirm draft</button>
       </form>
     </div>
-  );
+  )}
+  else{
+    return(<div>
+
+    </div>)
+  }
 };
 
 export default ConfirmGame;
