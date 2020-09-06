@@ -1,0 +1,1564 @@
+[
+  {
+    "object": "card",
+    "id": "86bf43b1-8d4e-4759-bb2d-0b2e03ba7012",
+    "oracle_id": "0004ebd0-dfd6-4276-b4a6-de0003e94237",
+    "multiverse_ids": [
+      15862
+    ],
+    "mtgo_id": 15870,
+    "mtgo_foil_id": 15871,
+    "tcgplayer_id": 3094,
+    "name": "Static Orb",
+    "lang": "en",
+    "released_at": "2001-04-11",
+    "uri": "https://api.scryfall.com/cards/86bf43b1-8d4e-4759-bb2d-0b2e03ba7012",
+    "scryfall_uri": "https://scryfall.com/card/7ed/319/static-orb?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/8/6/86bf43b1-8d4e-4759-bb2d-0b2e03ba7012.jpg?1562242171",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/6/86bf43b1-8d4e-4759-bb2d-0b2e03ba7012.jpg?1562242171",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/8/6/86bf43b1-8d4e-4759-bb2d-0b2e03ba7012.jpg?1562242171",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/8/6/86bf43b1-8d4e-4759-bb2d-0b2e03ba7012.png?1562242171",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/8/6/86bf43b1-8d4e-4759-bb2d-0b2e03ba7012.jpg?1562242171",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/8/6/86bf43b1-8d4e-4759-bb2d-0b2e03ba7012.jpg?1562242171"
+    },
+    "mana_cost": "{3}",
+    "cmc": 3,
+    "type_line": "Artifact",
+    "oracle_text": "As long as Static Orb is untapped, players can't untap more than two permanents during their untap steps.",
+    "colors": [],
+    "color_identity": [],
+    "keywords": [],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "not_legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "not_legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": true,
+    "variation": false,
+    "set": "7ed",
+    "set_name": "Seventh Edition",
+    "set_type": "core",
+    "set_uri": "https://api.scryfall.com/sets/230f38aa-9511-4db8-a3aa-aeddbc3f7bb9",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3A7ed&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/7ed?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/86bf43b1-8d4e-4759-bb2d-0b2e03ba7012/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A0004ebd0-dfd6-4276-b4a6-de0003e94237&unique=prints",
+    "collector_number": "319",
+    "digital": false,
+    "rarity": "rare",
+    "flavor_text": "The warriors fought against the paralyzing waves until even their thoughts froze in place.",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Terese Nielsen",
+    "artist_ids": [
+      "eb55171c-2342-45f4-a503-2d5a75baf752"
+    ],
+    "illustration_id": "6f8b3b2c-252f-4f95-b621-712c82be38b5",
+    "border_color": "white",
+    "frame": "1997",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 1857,
+    "prices": {
+      "usd": "16.55",
+      "usd_foil": "84.99",
+      "eur": "11.90",
+      "tix": "0.70"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=15862",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Static+Orb&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Static+Orb",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Static+Orb"
+    }
+  },
+  {
+    "object": "card",
+    "id": "7050735c-b232-47a6-a342-01795bfd0d46",
+    "oracle_id": "0006faf6-7a61-426c-9034-579f2cfcfa83",
+    "multiverse_ids": [
+      370780
+    ],
+    "mtgo_id": 49283,
+    "mtgo_foil_id": 49284,
+    "tcgplayer_id": 69965,
+    "name": "Sensory Deprivation",
+    "lang": "en",
+    "released_at": "2013-07-19",
+    "uri": "https://api.scryfall.com/cards/7050735c-b232-47a6-a342-01795bfd0d46",
+    "scryfall_uri": "https://scryfall.com/card/m14/71/sensory-deprivation?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/7/0/7050735c-b232-47a6-a342-01795bfd0d46.jpg?1562830795",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/7/0/7050735c-b232-47a6-a342-01795bfd0d46.jpg?1562830795",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/7/0/7050735c-b232-47a6-a342-01795bfd0d46.jpg?1562830795",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/7/0/7050735c-b232-47a6-a342-01795bfd0d46.png?1562830795",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/7/0/7050735c-b232-47a6-a342-01795bfd0d46.jpg?1562830795",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/7/0/7050735c-b232-47a6-a342-01795bfd0d46.jpg?1562830795"
+    },
+    "mana_cost": "{U}",
+    "cmc": 1,
+    "type_line": "Enchantment — Aura",
+    "oracle_text": "Enchant creature\nEnchanted creature gets -3/-0.",
+    "colors": [
+      "U"
+    ],
+    "color_identity": [
+      "U"
+    ],
+    "keywords": [
+      "Enchant"
+    ],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "legal",
+      "modern": "legal",
+      "legacy": "legal",
+      "pauper": "legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": true,
+    "variation": false,
+    "set": "m14",
+    "set_name": "Magic 2014",
+    "set_type": "core",
+    "set_uri": "https://api.scryfall.com/sets/e03ee1c0-ecd2-4fcc-ac3c-e8fdb103a847",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Am14&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/m14?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/7050735c-b232-47a6-a342-01795bfd0d46/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A0006faf6-7a61-426c-9034-579f2cfcfa83&unique=prints",
+    "collector_number": "71",
+    "digital": false,
+    "rarity": "common",
+    "flavor_text": "They call it \"stitcher's anesthesia,\" a spell to deaden the senses while the mad doctors begin their grisly work.",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Steven Belledin",
+    "artist_ids": [
+      "f07d73b9-52a0-4fe5-858b-61f7b42174a5"
+    ],
+    "illustration_id": "3c9e9355-4dcd-411c-b85f-47386e94854b",
+    "border_color": "black",
+    "frame": "2003",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 18414,
+    "prices": {
+      "usd": "0.07",
+      "usd_foil": "0.21",
+      "eur": "0.01",
+      "tix": "0.03"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=370780",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Sensory+Deprivation&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Sensory+Deprivation",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Sensory+Deprivation"
+    }
+  },
+  {
+    "object": "card",
+    "id": "e718b21b-46d1-4844-985c-52745657b1ac",
+    "oracle_id": "0007c283-5b7a-4c00-9ca1-b455c8dff8c3",
+    "multiverse_ids": [
+      470580
+    ],
+    "mtgo_id": 77122,
+    "tcgplayer_id": 196536,
+    "name": "Road of Return",
+    "lang": "en",
+    "released_at": "2019-08-23",
+    "uri": "https://api.scryfall.com/cards/e718b21b-46d1-4844-985c-52745657b1ac",
+    "scryfall_uri": "https://scryfall.com/card/c19/34/road-of-return?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/e/7/e718b21b-46d1-4844-985c-52745657b1ac.jpg?1568003608",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/7/e718b21b-46d1-4844-985c-52745657b1ac.jpg?1568003608",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/e/7/e718b21b-46d1-4844-985c-52745657b1ac.jpg?1568003608",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/e/7/e718b21b-46d1-4844-985c-52745657b1ac.png?1568003608",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/e/7/e718b21b-46d1-4844-985c-52745657b1ac.jpg?1568003608",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/e/7/e718b21b-46d1-4844-985c-52745657b1ac.jpg?1568003608"
+    },
+    "mana_cost": "{G}{G}",
+    "cmc": 2,
+    "type_line": "Sorcery",
+    "oracle_text": "Choose one —\n• Return target permanent card from your graveyard to your hand.\n• Put your commander into your hand from the command zone.\nEntwine {2} (Choose both if you pay the entwine cost.)",
+    "colors": [
+      "G"
+    ],
+    "color_identity": [
+      "G"
+    ],
+    "keywords": [
+      "Entwine"
+    ],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "not_legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "not_legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": false,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": false,
+    "variation": false,
+    "set": "c19",
+    "set_name": "Commander 2019",
+    "set_type": "commander",
+    "set_uri": "https://api.scryfall.com/sets/0fa3ccbb-d86d-4a2e-a55e-c4979c4feeb2",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ac19&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/c19?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/e718b21b-46d1-4844-985c-52745657b1ac/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A0007c283-5b7a-4c00-9ca1-b455c8dff8c3&unique=prints",
+    "collector_number": "34",
+    "digital": false,
+    "rarity": "rare",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Jonas De Ro",
+    "artist_ids": [
+      "561ebf9e-8d93-4b57-8156-8826d0c19601"
+    ],
+    "illustration_id": "279f7cef-a81c-4b43-98a0-937f3c355b5e",
+    "border_color": "black",
+    "frame": "2015",
+    "full_art": false,
+    "textless": false,
+    "booster": false,
+    "story_spotlight": false,
+    "edhrec_rank": 3754,
+    "preview": {
+      "source": "Magicshibby",
+      "source_uri": "https://www.youtube.com/watch?v=39MC2wBcf00&t=7m51s",
+      "previewed_at": "2019-08-05"
+    },
+    "prices": {
+      "usd": "0.40",
+      "usd_foil": null,
+      "eur": "0.80",
+      "tix": "0.41"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=470580",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Road+of+Return&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Road+of+Return",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Road+of+Return"
+    }
+  },
+  {
+    "object": "card",
+    "id": "036ef8c9-72ac-46ce-af07-83b79d736538",
+    "oracle_id": "000d5588-5a4c-434e-988d-396632ade42c",
+    "multiverse_ids": [
+      83282
+    ],
+    "mtgo_id": 22609,
+    "mtgo_foil_id": 22610,
+    "tcgplayer_id": 12835,
+    "name": "Storm Crow",
+    "lang": "en",
+    "released_at": "2005-07-29",
+    "uri": "https://api.scryfall.com/cards/036ef8c9-72ac-46ce-af07-83b79d736538",
+    "scryfall_uri": "https://scryfall.com/card/9ed/100/storm-crow?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/0/3/036ef8c9-72ac-46ce-af07-83b79d736538.jpg?1562730661",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/0/3/036ef8c9-72ac-46ce-af07-83b79d736538.jpg?1562730661",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/0/3/036ef8c9-72ac-46ce-af07-83b79d736538.jpg?1562730661",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/0/3/036ef8c9-72ac-46ce-af07-83b79d736538.png?1562730661",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/0/3/036ef8c9-72ac-46ce-af07-83b79d736538.jpg?1562730661",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/0/3/036ef8c9-72ac-46ce-af07-83b79d736538.jpg?1562730661"
+    },
+    "mana_cost": "{1}{U}",
+    "cmc": 2,
+    "type_line": "Creature — Bird",
+    "oracle_text": "Flying (This creature can't be blocked except by creatures with flying or reach.)",
+    "power": "1",
+    "toughness": "2",
+    "colors": [
+      "U"
+    ],
+    "color_identity": [
+      "U"
+    ],
+    "keywords": [
+      "Flying"
+    ],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "legal",
+      "legacy": "legal",
+      "pauper": "legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": true,
+    "variation": false,
+    "set": "9ed",
+    "set_name": "Ninth Edition",
+    "set_type": "core",
+    "set_uri": "https://api.scryfall.com/sets/e70c8572-4732-4e92-a140-b4e3c1c84c93",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3A9ed&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/9ed?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/036ef8c9-72ac-46ce-af07-83b79d736538/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A000d5588-5a4c-434e-988d-396632ade42c&unique=prints",
+    "collector_number": "100",
+    "digital": false,
+    "rarity": "common",
+    "flavor_text": "Storm crow descending, winter unending. Storm crow departing, summer is starting.",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "John Matson",
+    "artist_ids": [
+      "a1685587-4b55-446b-b420-c37b202ed3f1"
+    ],
+    "illustration_id": "d01aa92b-0582-4e1e-a7b0-737b2ad4e462",
+    "border_color": "white",
+    "frame": "2003",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 10548,
+    "prices": {
+      "usd": "0.14",
+      "usd_foil": "2.33",
+      "eur": "0.03",
+      "tix": "0.03"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=83282",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Storm+Crow&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Storm+Crow",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Storm+Crow"
+    }
+  },
+  {
+    "object": "card",
+    "id": "b125d1e7-5d9b-4997-88b0-71bdfc19c6f2",
+    "oracle_id": "000e5d65-96c3-498b-bd01-72b1a1991850",
+    "multiverse_ids": [
+      12380
+    ],
+    "mtgo_id": 12637,
+    "mtgo_foil_id": 12638,
+    "tcgplayer_id": 6412,
+    "name": "Walking Sponge",
+    "lang": "en",
+    "released_at": "1999-02-15",
+    "uri": "https://api.scryfall.com/cards/b125d1e7-5d9b-4997-88b0-71bdfc19c6f2",
+    "scryfall_uri": "https://scryfall.com/card/ulg/47/walking-sponge?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/b/1/b125d1e7-5d9b-4997-88b0-71bdfc19c6f2.jpg?1562863790",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/b/1/b125d1e7-5d9b-4997-88b0-71bdfc19c6f2.jpg?1562863790",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/b/1/b125d1e7-5d9b-4997-88b0-71bdfc19c6f2.jpg?1562863790",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/b/1/b125d1e7-5d9b-4997-88b0-71bdfc19c6f2.png?1562863790",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/b/1/b125d1e7-5d9b-4997-88b0-71bdfc19c6f2.jpg?1562863790",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/b/1/b125d1e7-5d9b-4997-88b0-71bdfc19c6f2.jpg?1562863790"
+    },
+    "mana_cost": "{1}{U}",
+    "cmc": 2,
+    "type_line": "Creature — Sponge",
+    "oracle_text": "{T}: Target creature loses your choice of flying, first strike, or trample until end of turn.",
+    "power": "1",
+    "toughness": "1",
+    "colors": [
+      "U"
+    ],
+    "color_identity": [
+      "U"
+    ],
+    "keywords": [],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "not_legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": false,
+    "variation": false,
+    "set": "ulg",
+    "set_name": "Urza's Legacy",
+    "set_type": "expansion",
+    "set_uri": "https://api.scryfall.com/sets/78ced61b-4b8a-4b33-b6b2-f5bd66f1a75a",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aulg&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/ulg?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/b125d1e7-5d9b-4997-88b0-71bdfc19c6f2/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A000e5d65-96c3-498b-bd01-72b1a1991850&unique=prints",
+    "collector_number": "47",
+    "digital": false,
+    "rarity": "uncommon",
+    "flavor_text": "Not only does it catch fish, it cleans them too.",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Ron Spencer",
+    "artist_ids": [
+      "dab52c11-0564-4207-a4a1-c1735c946a65"
+    ],
+    "illustration_id": "32958190-1a5b-4e24-9e5d-aa7bf1869fcd",
+    "border_color": "black",
+    "frame": "1997",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 16517,
+    "prices": {
+      "usd": "0.17",
+      "usd_foil": "0.73",
+      "eur": "0.07",
+      "tix": "0.07"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=12380",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Walking+Sponge&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Walking+Sponge",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Walking+Sponge"
+    }
+  },
+  {
+    "object": "card",
+    "id": "e0f83824-43c6-4101-88fd-9109958b23e2",
+    "oracle_id": "0012bc78-e69d-4a67-a302-e5fe0dfd4407",
+    "multiverse_ids": [
+      460955
+    ],
+    "mtgo_id": 71662,
+    "arena_id": 69479,
+    "tcgplayer_id": 187123,
+    "name": "Ravnica at War",
+    "lang": "en",
+    "released_at": "2019-05-03",
+    "uri": "https://api.scryfall.com/cards/e0f83824-43c6-4101-88fd-9109958b23e2",
+    "scryfall_uri": "https://scryfall.com/card/war/28/ravnica-at-war?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/e/0/e0f83824-43c6-4101-88fd-9109958b23e2.jpg?1557576051",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/0/e0f83824-43c6-4101-88fd-9109958b23e2.jpg?1557576051",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/e/0/e0f83824-43c6-4101-88fd-9109958b23e2.jpg?1557576051",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/e/0/e0f83824-43c6-4101-88fd-9109958b23e2.png?1557576051",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/e/0/e0f83824-43c6-4101-88fd-9109958b23e2.jpg?1557576051",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/e/0/e0f83824-43c6-4101-88fd-9109958b23e2.jpg?1557576051"
+    },
+    "mana_cost": "{3}{W}",
+    "cmc": 4,
+    "type_line": "Sorcery",
+    "oracle_text": "Exile all multicolored permanents.",
+    "colors": [
+      "W"
+    ],
+    "color_identity": [
+      "W"
+    ],
+    "keywords": [],
+    "legalities": {
+      "standard": "legal",
+      "future": "not_legal",
+      "historic": "legal",
+      "pioneer": "legal",
+      "modern": "legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "arena",
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": false,
+    "variation": false,
+    "set": "war",
+    "set_name": "War of the Spark",
+    "set_type": "expansion",
+    "set_uri": "https://api.scryfall.com/sets/ee044f0b-e101-4ead-8d0e-aa510aad4277",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Awar&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/war?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/e0f83824-43c6-4101-88fd-9109958b23e2/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A0012bc78-e69d-4a67-a302-e5fe0dfd4407&unique=prints",
+    "collector_number": "28",
+    "digital": false,
+    "rarity": "rare",
+    "flavor_text": "The heart of Ravnica disappeared before anyone could strike a blow in its defense.",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Adam Paquette",
+    "artist_ids": [
+      "89023dad-e6c0-41e0-83fb-eb2bfbbdc3f2"
+    ],
+    "illustration_id": "6f929370-dced-4eaf-a396-bffb0493e122",
+    "border_color": "black",
+    "frame": "2015",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": true,
+    "edhrec_rank": 5346,
+    "preview": {
+      "source": "Wizards of the Coast",
+      "source_uri": "https://www.twitch.tv/videos/404095372",
+      "previewed_at": "2019-03-31"
+    },
+    "prices": {
+      "usd": "0.20",
+      "usd_foil": "0.41",
+      "eur": "0.09",
+      "tix": "0.01"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=460955",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Ravnica+at+War&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Ravnica+at+War",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Ravnica+at+War"
+    }
+  },
+  {
+    "object": "card",
+    "id": "feeee859-f64a-4cd8-be0b-ad60cff8812e",
+    "oracle_id": "00181784-9213-492a-ba8c-2028969b049e",
+    "multiverse_ids": [
+      43530
+    ],
+    "mtgo_id": 18686,
+    "mtgo_foil_id": 18687,
+    "tcgplayer_id": 10927,
+    "name": "Torrent of Fire",
+    "lang": "en",
+    "released_at": "2003-05-26",
+    "uri": "https://api.scryfall.com/cards/feeee859-f64a-4cd8-be0b-ad60cff8812e",
+    "scryfall_uri": "https://scryfall.com/card/scg/107/torrent-of-fire?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/f/e/feeee859-f64a-4cd8-be0b-ad60cff8812e.jpg?1562537400",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/f/e/feeee859-f64a-4cd8-be0b-ad60cff8812e.jpg?1562537400",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/f/e/feeee859-f64a-4cd8-be0b-ad60cff8812e.jpg?1562537400",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/f/e/feeee859-f64a-4cd8-be0b-ad60cff8812e.png?1562537400",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/f/e/feeee859-f64a-4cd8-be0b-ad60cff8812e.jpg?1562537400",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/f/e/feeee859-f64a-4cd8-be0b-ad60cff8812e.jpg?1562537400"
+    },
+    "mana_cost": "{3}{R}{R}",
+    "cmc": 5,
+    "type_line": "Sorcery",
+    "oracle_text": "Torrent of Fire deals damage to any target equal to the highest converted mana cost among permanents you control.",
+    "colors": [
+      "R"
+    ],
+    "color_identity": [
+      "R"
+    ],
+    "keywords": [],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "not_legal",
+      "legacy": "legal",
+      "pauper": "legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": false,
+    "variation": false,
+    "set": "scg",
+    "set_name": "Scourge",
+    "set_type": "expansion",
+    "set_uri": "https://api.scryfall.com/sets/5133c3a1-1412-4ce6-a1f0-73b695966ded",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ascg&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/scg?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/feeee859-f64a-4cd8-be0b-ad60cff8812e/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A00181784-9213-492a-ba8c-2028969b049e&unique=prints",
+    "collector_number": "107",
+    "digital": false,
+    "rarity": "common",
+    "flavor_text": "Dragon fire melts any instrument designed to measure it.",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Thomas M. Baxa",
+    "artist_ids": [
+      "ff346569-557d-4043-ae44-97c2c7cabd7d"
+    ],
+    "illustration_id": "4528aa09-42d0-4a3f-8ac6-98c129a14be5",
+    "border_color": "black",
+    "frame": "1997",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 17138,
+    "prices": {
+      "usd": "0.05",
+      "usd_foil": "0.26",
+      "eur": "0.05",
+      "tix": "0.04"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=43530",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Torrent+of+Fire&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Torrent+of+Fire",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Torrent+of+Fire"
+    }
+  },
+  {
+    "object": "card",
+    "id": "3c97d419-6fee-4a32-9e64-8a827da59934",
+    "oracle_id": "00185f3b-2777-4417-a8e0-4691f41c0ec1",
+    "multiverse_ids": [
+      159766
+    ],
+    "mtgo_id": 27879,
+    "mtgo_foil_id": 27880,
+    "name": "Wyluli Wolf",
+    "lang": "en",
+    "released_at": "2007-09-10",
+    "uri": "https://api.scryfall.com/cards/3c97d419-6fee-4a32-9e64-8a827da59934",
+    "scryfall_uri": "https://scryfall.com/card/me1/139/wyluli-wolf?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/3/c/3c97d419-6fee-4a32-9e64-8a827da59934.jpg?1559592454",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/3/c/3c97d419-6fee-4a32-9e64-8a827da59934.jpg?1559592454",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/3/c/3c97d419-6fee-4a32-9e64-8a827da59934.jpg?1559592454",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/3/c/3c97d419-6fee-4a32-9e64-8a827da59934.png?1559592454",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/3/c/3c97d419-6fee-4a32-9e64-8a827da59934.jpg?1559592454",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/3/c/3c97d419-6fee-4a32-9e64-8a827da59934.jpg?1559592454"
+    },
+    "mana_cost": "{1}{G}",
+    "cmc": 2,
+    "type_line": "Creature — Wolf",
+    "oracle_text": "{T}: Target creature gets +1/+1 until end of turn.",
+    "power": "1",
+    "toughness": "1",
+    "colors": [
+      "G"
+    ],
+    "color_identity": [
+      "G"
+    ],
+    "keywords": [],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "not_legal",
+      "legacy": "legal",
+      "pauper": "legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": true,
+    "variation": false,
+    "set": "me1",
+    "set_name": "Masters Edition",
+    "set_type": "masters",
+    "set_uri": "https://api.scryfall.com/sets/407d388d-1abf-4c1d-b0c6-f56280898a1a",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ame1&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/me1?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/3c97d419-6fee-4a32-9e64-8a827da59934/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A00185f3b-2777-4417-a8e0-4691f41c0ec1&unique=prints",
+    "collector_number": "139",
+    "digital": true,
+    "rarity": "common",
+    "flavor_text": "\"When one wolf calls, others follow. Who wants to fight creatures that eat scorpions?\"\n—Maimun al-Wyluli, diary",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Susan Van Camp",
+    "artist_ids": [
+      "8921d44a-837d-4d6e-bf9f-e4f7c33f11e8"
+    ],
+    "illustration_id": "0d9c85b3-357f-4aea-b181-d54bc1382c80",
+    "border_color": "black",
+    "frame": "1997",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 13608,
+    "prices": {
+      "usd": null,
+      "usd_foil": null,
+      "eur": null,
+      "tix": "0.04"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=159766",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Wyluli+Wolf&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Wyluli+Wolf",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Wyluli+Wolf"
+    }
+  },
+  {
+    "object": "card",
+    "id": "280f2a85-1900-460b-a768-164fc2dea636",
+    "oracle_id": "00187de2-bc48-4137-97d8-a9a0fafc76c1",
+    "multiverse_ids": [
+      457191
+    ],
+    "mtgo_id": 71094,
+    "arena_id": 69175,
+    "tcgplayer_id": 183217,
+    "name": "Pteramander",
+    "lang": "en",
+    "released_at": "2019-01-25",
+    "uri": "https://api.scryfall.com/cards/280f2a85-1900-460b-a768-164fc2dea636",
+    "scryfall_uri": "https://scryfall.com/card/rna/47/pteramander?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/2/8/280f2a85-1900-460b-a768-164fc2dea636.jpg?1584830293",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/2/8/280f2a85-1900-460b-a768-164fc2dea636.jpg?1584830293",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/2/8/280f2a85-1900-460b-a768-164fc2dea636.jpg?1584830293",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/2/8/280f2a85-1900-460b-a768-164fc2dea636.png?1584830293",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/2/8/280f2a85-1900-460b-a768-164fc2dea636.jpg?1584830293",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/2/8/280f2a85-1900-460b-a768-164fc2dea636.jpg?1584830293"
+    },
+    "mana_cost": "{U}",
+    "cmc": 1,
+    "type_line": "Creature — Salamander Drake",
+    "oracle_text": "Flying\n{7}{U}: Adapt 4. This ability costs {1} less to activate for each instant and sorcery card in your graveyard. (If this creature has no +1/+1 counters on it, put four +1/+1 counters on it.)",
+    "power": "1",
+    "toughness": "1",
+    "colors": [
+      "U"
+    ],
+    "color_identity": [
+      "U"
+    ],
+    "keywords": [
+      "Flying",
+      "Adapt"
+    ],
+    "legalities": {
+      "standard": "legal",
+      "future": "not_legal",
+      "historic": "legal",
+      "pioneer": "legal",
+      "modern": "legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "arena",
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": false,
+    "variation": false,
+    "set": "rna",
+    "set_name": "Ravnica Allegiance",
+    "set_type": "expansion",
+    "set_uri": "https://api.scryfall.com/sets/97a7fd84-8d89-45a3-b48b-c951f6a3f9f1",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Arna&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/rna?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/280f2a85-1900-460b-a768-164fc2dea636/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A00187de2-bc48-4137-97d8-a9a0fafc76c1&unique=prints",
+    "collector_number": "47",
+    "digital": false,
+    "rarity": "uncommon",
+    "watermark": "simic",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Simon Dominic",
+    "artist_ids": [
+      "b0e80135-db5a-4b88-a0bc-815a0e94faa1"
+    ],
+    "illustration_id": "702a5172-3b71-4b67-9e88-dff4b27ee8a6",
+    "border_color": "black",
+    "frame": "2015",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 6169,
+    "preview": {
+      "source": "NGA",
+      "source_uri": "http://ngabbs.com/read.php?tid=16096035&rand=328",
+      "previewed_at": "2019-01-07"
+    },
+    "prices": {
+      "usd": "0.27",
+      "usd_foil": "1.73",
+      "eur": "0.35",
+      "tix": "0.02"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=457191",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Pteramander&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Pteramander",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Pteramander"
+    }
+  },
+  {
+    "object": "card",
+    "id": "5c0a4e6e-cc4e-43d5-aece-f009e117366a",
+    "oracle_id": "001c233f-2959-479b-a82a-64a25ac60830",
+    "multiverse_ids": [
+      29870
+    ],
+    "mtgo_id": 16591,
+    "mtgo_foil_id": 16592,
+    "tcgplayer_id": 9529,
+    "name": "Nantuko Elder",
+    "lang": "en",
+    "released_at": "2001-10-01",
+    "uri": "https://api.scryfall.com/cards/5c0a4e6e-cc4e-43d5-aece-f009e117366a",
+    "scryfall_uri": "https://scryfall.com/card/ody/254/nantuko-elder?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/5/c/5c0a4e6e-cc4e-43d5-aece-f009e117366a.jpg?1562911994",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/c/5c0a4e6e-cc4e-43d5-aece-f009e117366a.jpg?1562911994",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/5/c/5c0a4e6e-cc4e-43d5-aece-f009e117366a.jpg?1562911994",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/5/c/5c0a4e6e-cc4e-43d5-aece-f009e117366a.png?1562911994",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/5/c/5c0a4e6e-cc4e-43d5-aece-f009e117366a.jpg?1562911994",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/5/c/5c0a4e6e-cc4e-43d5-aece-f009e117366a.jpg?1562911994"
+    },
+    "mana_cost": "{2}{G}",
+    "cmc": 3,
+    "type_line": "Creature — Insect Druid",
+    "oracle_text": "{T}: Add {C}{G}.",
+    "power": "1",
+    "toughness": "2",
+    "colors": [
+      "G"
+    ],
+    "color_identity": [
+      "G"
+    ],
+    "keywords": [],
+    "produced_mana": [
+      "C",
+      "G"
+    ],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "not_legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": false,
+    "variation": false,
+    "set": "ody",
+    "set_name": "Odyssey",
+    "set_type": "expansion",
+    "set_uri": "https://api.scryfall.com/sets/b0d90d2d-494a-4224-bfa0-36ce5ee281b1",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aody&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/ody?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/5c0a4e6e-cc4e-43d5-aece-f009e117366a/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A001c233f-2959-479b-a82a-64a25ac60830&unique=prints",
+    "collector_number": "254",
+    "digital": false,
+    "rarity": "uncommon",
+    "flavor_text": "Plant a field with wishes, and you will grow more wishes.\n—Nantuko teaching",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Daren Bader",
+    "artist_ids": [
+      "7da1a585-c875-45e4-b322-5da9e8e1f651"
+    ],
+    "illustration_id": "630d978c-8352-4eeb-86c3-e91f02092276",
+    "border_color": "black",
+    "frame": "1997",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 9146,
+    "prices": {
+      "usd": "0.23",
+      "usd_foil": "2.96",
+      "eur": "0.15",
+      "tix": "0.09"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=29870",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Nantuko+Elder&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Nantuko+Elder",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Nantuko+Elder"
+    }
+  },
+  {
+    "object": "card",
+    "id": "5ab2ba75-e52e-46f5-8a34-3fe1e07446fd",
+    "oracle_id": "001c6369-df13-427d-89df-718d5c09f382",
+    "multiverse_ids": [
+      180619
+    ],
+    "mtgo_id": 32398,
+    "mtgo_foil_id": 32399,
+    "tcgplayer_id": 31830,
+    "name": "Vedalken Heretic",
+    "lang": "en",
+    "released_at": "2009-04-30",
+    "uri": "https://api.scryfall.com/cards/5ab2ba75-e52e-46f5-8a34-3fe1e07446fd",
+    "scryfall_uri": "https://scryfall.com/card/arb/104/vedalken-heretic?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/5/a/5ab2ba75-e52e-46f5-8a34-3fe1e07446fd.jpg?1562641484",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/5/a/5ab2ba75-e52e-46f5-8a34-3fe1e07446fd.jpg?1562641484",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/5/a/5ab2ba75-e52e-46f5-8a34-3fe1e07446fd.jpg?1562641484",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/5/a/5ab2ba75-e52e-46f5-8a34-3fe1e07446fd.png?1562641484",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/5/a/5ab2ba75-e52e-46f5-8a34-3fe1e07446fd.jpg?1562641484",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/5/a/5ab2ba75-e52e-46f5-8a34-3fe1e07446fd.jpg?1562641484"
+    },
+    "mana_cost": "{G}{U}",
+    "cmc": 2,
+    "type_line": "Creature — Vedalken Rogue",
+    "oracle_text": "Whenever Vedalken Heretic deals damage to an opponent, you may draw a card.",
+    "power": "1",
+    "toughness": "1",
+    "colors": [
+      "G",
+      "U"
+    ],
+    "color_identity": [
+      "G",
+      "U"
+    ],
+    "keywords": [],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": false,
+    "variation": false,
+    "set": "arb",
+    "set_name": "Alara Reborn",
+    "set_type": "expansion",
+    "set_uri": "https://api.scryfall.com/sets/db486ec5-141d-4781-9ee5-5456926934c1",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aarb&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/arb?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/5ab2ba75-e52e-46f5-8a34-3fe1e07446fd/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A001c6369-df13-427d-89df-718d5c09f382&unique=prints",
+    "collector_number": "104",
+    "digital": false,
+    "rarity": "rare",
+    "flavor_text": "\"Etherium clouded my eyes, clogged my ears, desensitized my skin. Now that I can feel, I can begin to learn.\"",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Greg Staples",
+    "artist_ids": [
+      "93d65564-bf00-447b-8406-e2031f03b6b1"
+    ],
+    "illustration_id": "9ee4986a-bcc6-4a22-af7d-aa1b5d6881a5",
+    "border_color": "black",
+    "frame": "2003",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 12463,
+    "prices": {
+      "usd": "0.25",
+      "usd_foil": "0.70",
+      "eur": "0.15",
+      "tix": "0.02"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=180619",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Vedalken+Heretic&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Vedalken+Heretic",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Vedalken+Heretic"
+    }
+  },
+  {
+    "object": "card",
+    "id": "4d53c5ec-eb0b-48cc-b244-99cb42d61b4a",
+    "oracle_id": "002100cd-1ab1-44da-93a0-1269d47a712a",
+    "multiverse_ids": [],
+    "arena_id": 75481,
+    "name": "Waterknot",
+    "lang": "en",
+    "released_at": "2020-08-13",
+    "uri": "https://api.scryfall.com/cards/4d53c5ec-eb0b-48cc-b244-99cb42d61b4a",
+    "scryfall_uri": "https://scryfall.com/card/anb/40/waterknot?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/4/d/4d53c5ec-eb0b-48cc-b244-99cb42d61b4a.jpg?1597376919",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/4/d/4d53c5ec-eb0b-48cc-b244-99cb42d61b4a.jpg?1597376919",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/4/d/4d53c5ec-eb0b-48cc-b244-99cb42d61b4a.jpg?1597376919",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/4/d/4d53c5ec-eb0b-48cc-b244-99cb42d61b4a.png?1597376919",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/4/d/4d53c5ec-eb0b-48cc-b244-99cb42d61b4a.jpg?1597376919",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/4/d/4d53c5ec-eb0b-48cc-b244-99cb42d61b4a.jpg?1597376919"
+    },
+    "mana_cost": "{1}{U}{U}",
+    "cmc": 3,
+    "type_line": "Enchantment — Aura",
+    "oracle_text": "Enchant creature\nWhen Waterknot enters the battlefield, tap enchanted creature.\nEnchanted creature doesn't untap during its controller's untap step.",
+    "colors": [
+      "U"
+    ],
+    "color_identity": [
+      "U"
+    ],
+    "keywords": [
+      "Enchant"
+    ],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "legal",
+      "pioneer": "legal",
+      "modern": "legal",
+      "legacy": "legal",
+      "pauper": "legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "arena"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": true,
+    "variation": false,
+    "set": "anb",
+    "set_name": "Arena Beginner Set",
+    "set_type": "starter",
+    "set_uri": "https://api.scryfall.com/sets/fb2d12a7-a385-4ec0-b7fd-e2ff1796d7a8",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Aanb&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/anb?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/4d53c5ec-eb0b-48cc-b244-99cb42d61b4a/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A002100cd-1ab1-44da-93a0-1269d47a712a&unique=prints",
+    "collector_number": "40",
+    "digital": true,
+    "rarity": "common",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Wayne Reynolds",
+    "artist_ids": [
+      "afc47cec-3ccc-404e-a8c6-4d83dd504271"
+    ],
+    "illustration_id": "a1d217a1-be8c-493c-badc-a2270bdd2671",
+    "border_color": "black",
+    "frame": "2015",
+    "full_art": false,
+    "textless": false,
+    "booster": false,
+    "story_spotlight": false,
+    "edhrec_rank": 10945,
+    "prices": {
+      "usd": null,
+      "usd_foil": null,
+      "eur": null,
+      "tix": null
+    },
+    "related_uris": {
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Waterknot&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Waterknot",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Waterknot"
+    }
+  },
+  {
+    "object": "card",
+    "id": "1ce91e38-4601-4354-ad1b-2c5c1c70da17",
+    "oracle_id": "00225c40-27ff-410f-a591-5c788c6a2bd6",
+    "multiverse_ids": [
+      435273
+    ],
+    "mtgo_id": 65254,
+    "mtgo_foil_id": 65255,
+    "arena_id": 66203,
+    "tcgplayer_id": 145606,
+    "name": "Ruthless Knave",
+    "lang": "en",
+    "released_at": "2017-09-29",
+    "uri": "https://api.scryfall.com/cards/1ce91e38-4601-4354-ad1b-2c5c1c70da17",
+    "scryfall_uri": "https://scryfall.com/card/xln/119/ruthless-knave?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/1/c/1ce91e38-4601-4354-ad1b-2c5c1c70da17.jpg?1562551661",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/1/c/1ce91e38-4601-4354-ad1b-2c5c1c70da17.jpg?1562551661",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/1/c/1ce91e38-4601-4354-ad1b-2c5c1c70da17.jpg?1562551661",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/1/c/1ce91e38-4601-4354-ad1b-2c5c1c70da17.png?1562551661",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/1/c/1ce91e38-4601-4354-ad1b-2c5c1c70da17.jpg?1562551661",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/1/c/1ce91e38-4601-4354-ad1b-2c5c1c70da17.jpg?1562551661"
+    },
+    "mana_cost": "{2}{B}",
+    "cmc": 3,
+    "type_line": "Creature — Orc Pirate",
+    "oracle_text": "{2}{B}, Sacrifice a creature: Create two Treasure tokens. (They're artifacts with \"{T}, Sacrifice this artifact: Add one mana of any color.\")\nSacrifice three Treasures: Draw a card.",
+    "power": "3",
+    "toughness": "2",
+    "colors": [
+      "B"
+    ],
+    "color_identity": [
+      "B"
+    ],
+    "keywords": [],
+    "produced_mana": [
+      "B",
+      "G",
+      "R",
+      "U",
+      "W"
+    ],
+    "all_parts": [
+      {
+        "object": "related_card",
+        "id": "1ce91e38-4601-4354-ad1b-2c5c1c70da17",
+        "component": "combo_piece",
+        "name": "Ruthless Knave",
+        "type_line": "Creature — Orc Pirate",
+        "uri": "https://api.scryfall.com/cards/1ce91e38-4601-4354-ad1b-2c5c1c70da17"
+      },
+      {
+        "object": "related_card",
+        "id": "720f3e68-84c0-462e-a0d1-90236ccc494a",
+        "component": "token",
+        "name": "Treasure",
+        "type_line": "Token Artifact — Treasure",
+        "uri": "https://api.scryfall.com/cards/720f3e68-84c0-462e-a0d1-90236ccc494a"
+      }
+    ],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "legal",
+      "pioneer": "legal",
+      "modern": "legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "arena",
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": false,
+    "variation": false,
+    "set": "xln",
+    "set_name": "Ixalan",
+    "set_type": "expansion",
+    "set_uri": "https://api.scryfall.com/sets/fe0dad85-54bc-4151-9200-d68da84dd0f2",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Axln&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/xln?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/1ce91e38-4601-4354-ad1b-2c5c1c70da17/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A00225c40-27ff-410f-a591-5c788c6a2bd6&unique=prints",
+    "collector_number": "119",
+    "digital": false,
+    "rarity": "uncommon",
+    "flavor_text": "\"This scum is barely worth the trouble.\"",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Aaron Miller",
+    "artist_ids": [
+      "fc021f3d-773a-4706-bbe7-f602324f511f"
+    ],
+    "illustration_id": "94c232d4-9595-4e7d-a016-bde207f72f01",
+    "border_color": "black",
+    "frame": "2015",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 4508,
+    "prices": {
+      "usd": "0.15",
+      "usd_foil": "0.71",
+      "eur": "0.10",
+      "tix": "0.03"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=435273",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Ruthless+Knave&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Ruthless+Knave",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Ruthless+Knave"
+    }
+  },
+  {
+    "object": "card",
+    "id": "ef772879-44aa-428d-8c12-50d38f8bac80",
+    "oracle_id": "0023888e-7bec-43e0-8dee-d1a4eb94b372",
+    "multiverse_ids": [
+      383040
+    ],
+    "mtgo_id": 52791,
+    "mtgo_foil_id": 52792,
+    "name": "Palinchron",
+    "lang": "en",
+    "released_at": "2014-06-16",
+    "uri": "https://api.scryfall.com/cards/ef772879-44aa-428d-8c12-50d38f8bac80",
+    "scryfall_uri": "https://scryfall.com/card/vma/86/palinchron?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/e/f/ef772879-44aa-428d-8c12-50d38f8bac80.jpg?1562943097",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/e/f/ef772879-44aa-428d-8c12-50d38f8bac80.jpg?1562943097",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/e/f/ef772879-44aa-428d-8c12-50d38f8bac80.jpg?1562943097",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/e/f/ef772879-44aa-428d-8c12-50d38f8bac80.png?1562943097",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/e/f/ef772879-44aa-428d-8c12-50d38f8bac80.jpg?1562943097",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/e/f/ef772879-44aa-428d-8c12-50d38f8bac80.jpg?1562943097"
+    },
+    "mana_cost": "{5}{U}{U}",
+    "cmc": 7,
+    "type_line": "Creature — Illusion",
+    "oracle_text": "Flying\nWhen Palinchron enters the battlefield, untap up to seven lands.\n{2}{U}{U}: Return Palinchron to its owner's hand.",
+    "power": "4",
+    "toughness": "5",
+    "colors": [
+      "U"
+    ],
+    "color_identity": [
+      "U"
+    ],
+    "keywords": [
+      "Flying"
+    ],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "not_legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "mtgo"
+    ],
+    "reserved": true,
+    "foil": true,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": true,
+    "variation": false,
+    "set": "vma",
+    "set_name": "Vintage Masters",
+    "set_type": "masters",
+    "set_uri": "https://api.scryfall.com/sets/a944551a-73fa-41cd-9159-e8d0e4674403",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Avma&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/vma?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/ef772879-44aa-428d-8c12-50d38f8bac80/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A0023888e-7bec-43e0-8dee-d1a4eb94b372&unique=prints",
+    "collector_number": "86",
+    "digital": true,
+    "rarity": "rare",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Matthew D. Wilson",
+    "artist_ids": [
+      "4fbafd13-0cf9-42a1-870d-7f8ea276f140"
+    ],
+    "illustration_id": "90e4d690-c822-4f8b-bab5-09530e0d394d",
+    "border_color": "black",
+    "frame": "2015",
+    "full_art": false,
+    "textless": false,
+    "booster": true,
+    "story_spotlight": false,
+    "edhrec_rank": 2212,
+    "prices": {
+      "usd": null,
+      "usd_foil": null,
+      "eur": null,
+      "tix": "0.02"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=383040",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Palinchron&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Palinchron",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Palinchron"
+    }
+  },
+  {
+    "object": "card",
+    "id": "8bbdc7c5-71a1-4db8-98b2-8883bf648dca",
+    "oracle_id": "00284955-0a1b-4939-9567-a7d34cbcee51",
+    "multiverse_ids": [
+      376366
+    ],
+    "mtgo_id": 50882,
+    "mtgo_foil_id": 50883,
+    "tcgplayer_id": 72146,
+    "name": "Hua Tuo, Honored Physician",
+    "lang": "en",
+    "released_at": "2013-11-01",
+    "uri": "https://api.scryfall.com/cards/8bbdc7c5-71a1-4db8-98b2-8883bf648dca",
+    "scryfall_uri": "https://scryfall.com/card/c13/149/hua-tuo-honored-physician?utm_source=api",
+    "layout": "normal",
+    "highres_image": true,
+    "image_uris": {
+      "small": "https://c1.scryfall.com/file/scryfall-cards/small/front/8/b/8bbdc7c5-71a1-4db8-98b2-8883bf648dca.jpg?1562924564",
+      "normal": "https://c1.scryfall.com/file/scryfall-cards/normal/front/8/b/8bbdc7c5-71a1-4db8-98b2-8883bf648dca.jpg?1562924564",
+      "large": "https://c1.scryfall.com/file/scryfall-cards/large/front/8/b/8bbdc7c5-71a1-4db8-98b2-8883bf648dca.jpg?1562924564",
+      "png": "https://c1.scryfall.com/file/scryfall-cards/png/front/8/b/8bbdc7c5-71a1-4db8-98b2-8883bf648dca.png?1562924564",
+      "art_crop": "https://c1.scryfall.com/file/scryfall-cards/art_crop/front/8/b/8bbdc7c5-71a1-4db8-98b2-8883bf648dca.jpg?1562924564",
+      "border_crop": "https://c1.scryfall.com/file/scryfall-cards/border_crop/front/8/b/8bbdc7c5-71a1-4db8-98b2-8883bf648dca.jpg?1562924564"
+    },
+    "mana_cost": "{1}{G}{G}",
+    "cmc": 3,
+    "type_line": "Legendary Creature — Human",
+    "oracle_text": "{T}: Put target creature card from your graveyard on top of your library. Activate this ability only during your turn, before attackers are declared.",
+    "power": "1",
+    "toughness": "2",
+    "colors": [
+      "G"
+    ],
+    "color_identity": [
+      "G"
+    ],
+    "keywords": [],
+    "legalities": {
+      "standard": "not_legal",
+      "future": "not_legal",
+      "historic": "not_legal",
+      "pioneer": "not_legal",
+      "modern": "not_legal",
+      "legacy": "legal",
+      "pauper": "not_legal",
+      "vintage": "legal",
+      "penny": "not_legal",
+      "commander": "legal",
+      "brawl": "not_legal",
+      "duel": "legal",
+      "oldschool": "not_legal"
+    },
+    "games": [
+      "paper",
+      "mtgo"
+    ],
+    "reserved": false,
+    "foil": false,
+    "nonfoil": true,
+    "oversized": false,
+    "promo": false,
+    "reprint": true,
+    "variation": false,
+    "set": "c13",
+    "set_name": "Commander 2013",
+    "set_type": "commander",
+    "set_uri": "https://api.scryfall.com/sets/c62e6d4f-af8c-4f27-9bc8-361291890146",
+    "set_search_uri": "https://api.scryfall.com/cards/search?order=set&q=e%3Ac13&unique=prints",
+    "scryfall_set_uri": "https://scryfall.com/sets/c13?utm_source=api",
+    "rulings_uri": "https://api.scryfall.com/cards/8bbdc7c5-71a1-4db8-98b2-8883bf648dca/rulings",
+    "prints_search_uri": "https://api.scryfall.com/cards/search?order=released&q=oracleid%3A00284955-0a1b-4939-9567-a7d34cbcee51&unique=prints",
+    "collector_number": "149",
+    "digital": false,
+    "rarity": "rare",
+    "card_back_id": "0aeebaf5-8c7d-4636-9e82-8c27447861f7",
+    "artist": "Gao Jianzhang",
+    "artist_ids": [
+      "b4438bb0-939d-4842-a012-ad3dd5729082"
+    ],
+    "illustration_id": "980e6255-6258-4359-94f4-5ed79fe23cdf",
+    "border_color": "black",
+    "frame": "2003",
+    "full_art": false,
+    "textless": false,
+    "booster": false,
+    "story_spotlight": false,
+    "edhrec_rank": 5231,
+    "prices": {
+      "usd": "0.50",
+      "usd_foil": null,
+      "eur": "0.30",
+      "tix": "0.24"
+    },
+    "related_uris": {
+      "gatherer": "https://gatherer.wizards.com/Pages/Card/Details.aspx?multiverseid=376366",
+      "tcgplayer_decks": "https://decks.tcgplayer.com/magic/deck/search?contains=Hua+Tuo%2C+Honored+Physician&page=1&utm_campaign=affiliate&utm_medium=api&utm_source=scryfall",
+      "edhrec": "https://edhrec.com/route/?cc=Hua+Tuo%2C+Honored+Physician",
+      "mtgtop8": "https://mtgtop8.com/search?MD_check=1&SB_check=1&cards=Hua+Tuo%2C+Honored+Physician"
+    }
+  }
+]
