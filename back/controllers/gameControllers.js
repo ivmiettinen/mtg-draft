@@ -5,29 +5,11 @@ const { uuid } = require('uuidv4');
 const allPlayerStorage = require('../allPlayerStorageDB');
 // console.log('allPlayerStorage', allPlayerStorage)
 
-//Temp cards:
-
-let mtgCards = [
-  {
-    id: 1,
-    content: 'black lotus',
-  },
-  {
-    id: 2,
-    content: 'serra',
-  },
-  {
-    id: 3,
-    content: 'teferi forever',
-  },
-  { id: 4, content: 'teferi forever' },
-];
-
 //Variable for storing all the registered players
 
 //
 
-mtgRouter.get('/', (req, res, next) => {
+mtgRouter.get('/', (req, res) => {
   console.log('GET:', allPlayerStorage);
 
   // console.log('GET LENGTH:', allPlayerStorage.length);
